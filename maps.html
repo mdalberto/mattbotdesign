@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Google Maps API Example</title>
+
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAANBZUR6a1HGID3UXk--UbFBT7V4RLarGGsAoShxnOM6IlX_yTShRVDScbJuCr14MgxcBBb4IhyOAbjA" type="text/javascript"></script>
+  
+
+<style type="text/css">
+<!--
+body {
+	background-color: #CCC;
+}
+
+.Marker
+{
+	font-size:12px;
+	font-family:Arial;
+	text-align:left;
+}
+
+
+-->
+</style></head>
+
+
+ <body onunload="GUnload()">
+ <center>
+ 
+
+
+<div id="map" style="width: 770px; height: 440px; margin:0px;"></div>
+
+  <noscript><b>JavaScript must be enabled in order for you to use Google Maps.</b> 
+      However, it seems JavaScript is either disabled or not supported by your browser. 
+      To view Google Maps, enable JavaScript by changing your browser options, and then 
+      try again.
+    </noscript>
+ 
+
+    <script type="text/javascript">
+    //<![CDATA[
+    
+    if (GBrowserIsCompatible()) { 
+
+      // A function to create the marker and set up the event window
+      // Dont try to unroll this function. It has to be here for the function closure
+      // Each instance of the function preserves the contends of a different instance
+      // of the "marker" and "html" variables which will be needed later when the event triggers.    
+      function createMarker(point,html) {
+        var marker = new GMarker(point);
+        GEvent.addListener(marker, "click", function() {
+          marker.openInfoWindowHtml(html);
+        });
+        return marker;
+      }
+
+      // Display the map, with some controls and set the initial location 
+      var map = new GMap2(document.getElementById("map"));
+      map.setUIToDefault();
+		map.setMapType(G_NORMAL_MAP);
+      map.setCenter(new GLatLng(39.0,-95.677068),4);
+    
+      // Set up markers with info windows 
+    
+      var point = new GLatLng(40.394239,-75.14815);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Corporate Headquarters</strong><br />6141 Easton Road<br />Plumsteadville, PA 18949<br />Customer Service: 800-331-4953</div></div>')
+      map.addOverlay(marker);
+
+      var point = new GLatLng(40.575152,-74.485423);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Equipment Group</strong><br />241 Lackland Drive<br />Middlesex, NJ 08846<br />Customer Service: 800.654.2737</div>')
+      map.addOverlay(marker);
+
+      var point = new GLatLng(33.44544,-112.154973);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Arizona</strong><br />301 South 45th Avenue<br />Phoenix, AZ 85043-3914<br />Customer Service: 800-814-4642</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(32.102344,-110.804973);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Arizona</strong><br />8700 East Old Vail Road<br />Tucson, AZ 85747<br />Customer Service: 800-814-4642</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(35.380125,-118.997773);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>California</strong><br />311 Kentucky Street<br />Bakersfield, CA 93305 <br />Customer Service: 800-323-2212</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(33.959209,-118.065354);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>California</strong><br />8832 Dice Road<br />Santa Fe Springs, CA 90670-2516<br />Customer Service: 800-323-2212</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(37.948122,-122.36346);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>California</strong><br />1100 Hensley Street<br />Richmond, CA 94801<br />Customer Service: 800-323-2212</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(37.596597,-122.017155);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>California</strong><br />700 Decoto Road<br />Union City, CA 94587-3513<br />Customer Service: 800-323-2212</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(40.1624,-105.081452);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Colorado</strong><br />500 Weaver Park Road<br />Longmont, CO 80501<br />Customer Service: 800-814-4642</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(28.424273,-81.390726);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Florida</strong><br />9857 Bachman Road<br />Orlando, FL 32824-8006<br />Customer Service: 800-331-4953</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(33.448281,-81.976936);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Georgia</strong><br />1311 New Savannah Road<br />Augusta, GA 30901-3843<br />Customer Service: 800-331-4953</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(41.650651,-88.075728);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Illinois</strong><br />27 Forestwood Court Unit A<br />Romeoville, IL 60446<br />Customer Service: 800-774-9447</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(33.448281,-81.976936);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Georgia</strong><br />1311 New Savannah Road<br />Augusta, GA 30901-3843<br />Customer Service: 800-331-4953</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(33.448281,-81.976936);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Georgia</strong><br />1311 New Savannah Road<br />Augusta, GA 30901-3843<br />Customer Service: 800-331-4953</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(33.448281,-81.976936);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Georgia</strong><br />1311 New Savannah Road<br />Augusta, GA 30901-3843<br />Customer Service: 800-331-4953</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(33.448281,-81.976936);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Georgia</strong><br />1311 New Savannah Road<br />Augusta, GA 30901-3843<br />Customer Service: 800-331-4953</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(30.348206,-91.020419);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Louisana</strong><br />18222 East Petroleum Drive<br />Baton Rouge, LA 70809<br />Customer Service: 800-248-1427</div>')
+     map.addOverlay(marker);
+
+	  var point = new GLatLng(30.506207,-91.328007);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Louisana</strong><br />7425 Highway 190 West<br />Port Allen, LA  70767 <br />Customer Service: 800-248-1427</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(30.24215,-93.25071);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Louisana</strong><br />1091-A PPG Drive<br />Westlake, LA 70669 <br />Customer Service: 800-248-1427</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(42.545253,-83.138559);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Michigan</strong><br />1290 Combermere Street<br />Troy, MI 48083 <br />Customer Service: 800-774-9447</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(40.562281,-74.41792);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>New Jersey</strong><br />2330 Hamilton Boulevard<br />South Plainfield, NJ 07080 <br />Customer Service: 800-331-4953</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(36.061922,-115.019619);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Nevada</strong><br />601 West Sunset Road<br />Henderson, NV 89015-4111 <br />Customer Service: 800-814-4642</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(39.527836,-119.759869);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Nevada</strong><br />1290 Glendale Avenue<br />Sparks, NV 89431 <br />Customer Service: 800-814-4642</div>')
+      map.addOverlay(marker);
+	  /**/
+	  var point = new GLatLng(35.438155,-97.599835);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Oklahoma</strong><br />2708 South Meridian Avenue<br />Oklahoma City, OK 73108-1738 <br />Customer Service: 800-774-9447</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(36.17344,-95.975557);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Oklahoma</strong><br />1319 North Peoria Avenue<br />Tulsa, OK 74106-4948 <br />Customer Service: 800-774-9447</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(45.56909,-122.746739);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Oregon</strong><br />6529 NW Front Avenue<br />Portland, OR 97210-3678 <br />Customer Service: 800-814-4642</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(45.37611,-122.784227);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Oregon</strong><br />10450 SW Tualatin Sherwood Road<br />Tualatin, OR 97062-9504 <br />Customer Service: 800-814-4642</div>')
+      map.addOverlay(marker);
+
+	  var point = new GLatLng(40.18839,-79.855242);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Pennsylvania</strong><br />One Nitrous Lane<br />Donora, PA 15033<br />Customer Service: 800-331-4953</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(35.978527,-84.231526);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Tennessee</strong><br />1001 Alvin Weinberg Drive<br />Oak Ridge, TN 37830-8012 <br />Customer Service: 800-331-4953</div>')
+      map.addOverlay(marker);
+	   
+	  var point = new GLatLng(27.788963,-97.464466);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Texas</strong><br />301 Hereford Road<br />Corpus Christi, TX 78408-2305 <br />Customer Service: 800-248-1427</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(32.785354,-97.055122);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Texas</strong><br />801 West North Carrier Parkway<br />Grand Prairie, TX 75050-1003 <br />Customer Service: 800-248-1427</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(29.651447,-95.056267);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Texas</strong><br />11426 Fairmont Parkway<br />La Porte, TX 77571 <br />Customer Service: 800-248-1427</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(32.456482,-94.742082);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Texas</strong><br />710 FM 1845<br />Longview, TX 75602 <br />Customer Service: 800-248-1427</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(30.343147,-97.517209);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Texas</strong><br />12700 Beltex Drive<br />Manor, TX 78653-4556 <br />Customer Service: 800-248-1427</div>')
+      map.addOverlay(marker);
+	  
+	  var point = new GLatLng(29.440191,-98.513751);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Texas</strong><br />1547 West Poplar Street<br />San Antonio, TX 78207 <br />Customer Service: 800-248-1427</div>')
+      map.addOverlay(marker);
+	  
+	  	  var point = new GLatLng(29.864179,-95.600569);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Texas</strong><br />12800 West Little York Road<br />Houston, TX 77041<br />Customer Service: 800-248-1427</div>')
+      map.addOverlay(marker);
+	  
+	  	  	  var point = new GLatLng(29.738408,-95.464368);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Texas</strong><br />2700 Post Oak Blvd<br />Houston, TX 77056<br />Customer Service: 800-248-1427</div>')
+      map.addOverlay(marker);
+	
+		  	  	  var point = new GLatLng(29.791007,-95.441411);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Texas</strong><br />3535 W 12th St<br />Houston, TX 77008<br />Customer Service: 800-248-1427</div>')
+      map.addOverlay(marker);
+	  
+	  
+		  
+	  var point = new GLatLng(40.734465,-111.9117);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Utah</strong><br />1676 South 700 West<br />Salt Lake City, UT 84101-1610 <br />Customer Service: 800-814-4642</div>')
+      map.addOverlay(marker);
+	  
+	  	  var point = new GLatLng(36.027081,-78.86658);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>North Carolina Depot</strong><br />1750 East Club Blvd.<br />Durham, NC 27704<br />Customer Service: 800-331-4953</div>')
+      map.addOverlay(marker);
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  	  var point = new GLatLng(27.748032,-81.74429);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Florida Depot</strong><br />3301 C.R. 630 W.<br />Fort Meade, FL 33841<br />Customer Service: 800-331-4953</div>')
+      map.addOverlay(marker);
+	  
+	  	  var point = new GLatLng(42.223275,-71.768469);
+      var marker = createMarker(point,'<div style="width:210px" class="Marker"><strong>Massachusetts Depot</strong><br />373 Southwest Cutoff Road <br /> Worcester, MA 01604<br />Customer Service: 800-331-4953</div>')
+      map.addOverlay(marker);
+	  
+	  
+
+	  	}
+    
+    // display a warning if the browser was not compatible
+    else {
+      alert("Sorry, the Google Maps API is not compatible with this browser");
+    }
+
+    // This Javascript is based on code provided by the
+    // Community Church Javascript Team
+    // http://www.bisphamchurch.org.uk/   
+    // http://econym.org.uk/gmap/
+    //]]>
+
+	 </script>
+     
+    </center>
+
+</body>
+</html>

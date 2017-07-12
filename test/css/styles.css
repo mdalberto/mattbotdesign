@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+*
+{
+	padding:0px;
+	margin:0px;
+}
+
+body
+{
+ 	font-family: Arial, Verdana, Geneva, sans-serif;
+		line-height:16px;
+		font-size:13px;
+			color:#666;
+	
+}
+
+.Container
+{
+width:1024px;
+margin:0 auto;
+background-image:url(../images/Background.jpg);
+position:relative;
+
+	
+	
+}
+
+.Header
+{
+	width:1024px;
+	float:left;
+}
+
+.Logo
+{
+	float:left;
+	width:264px;
+	
+}
+
+.Nav
+{
+	width:376px;
+	float:right;
+	
+}
+
+.Center
+{
+	width:1024px;
+	float:left;
+	min-height:600px;
+	background-image:url(../images/body-repeater.jpg);
+	background-repeat:repeat-y;
+	background-position: 20px top;	
+	
+	
+}
+
+.Content
+{
+	width:753px;
+	background-image:url(../images/body-cap.jpg);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	margin-left:20px;
+	
+	
+}
+
+*html .Center
+{
+	height:600px;
+	
+}
+
+
+.RightSideHome {
+	font-size:11px;
+	color:999999;
+	position:absolute;
+	left:790px;
+	top:76px;
+	width:186px;
+	height:352px;
+	z-index:1;
+	overflow:hidden;
+}
+
+.RightSideHome span
+{
+	color:#333333;
+	font-weight:bold;
+}
+
+.RightSideHome a
+{
+	color:#333333;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.RightSideHome ul
+{	
+	list-style: none;
+	padding:0px;
+	margin:0px;
+	
+}
+
+.RightSideHome ul li
+{
+	padding-bottom:10px;
+}
+
+
+
+
+.Footer
+{
+	margin:0px auto;
+	width:970px;
+	height:81px;
+	font-size:11px;
+	padding:45px 0px 0px 56px;
+	color:#666;
+	background-image:url(../images/footer.jpg);
+	background-repeat:no-repeat;
+	
+}
+
+.Clear
+{
+	clear:both;
+	height:1px;
+	display:block;
+	background-color:#FFF;
+	
+}
