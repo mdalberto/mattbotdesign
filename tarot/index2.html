@@ -23,85 +23,11 @@
                      /* ==========================================================================
             CTA & Footer overrides
             ========================================================================== */
-                     #footer-o {
-                         bottom: 10px;
-                         width: 100%;
-                         background: transparent;
-                         text-align: center;
-                         position: absolute;
-                     }
-
-                     @media only screen and (max-width: 650px) {
-                         #footer-o {
-                             display: none;
-                         }
-                     }
-
-                     #footer-o > a {
-                         float: none;
-                     }
-
-                     #footer-o img {
-                         margin: 0 auto;
-                         width: auto;
-                     }
-
-                     #footer, .mobile.mobile-foot p {
-                         display: none;
-                     }
 
                      #results-cont .result-card .btn-cont {
                          position: relative;
                      }
 
-                     .ig-cta {
-                         width: 100%;
-                         margin-top: 20px;
-                         text-align: center;
-                     }
-
-                     @media only screen and (max-width: 650px) {
-                         .ig-cta {
-                             font-size: 14px;
-                         }
-                     }
-
-                     .ig-cta span {
-                         display: block;
-                         margin: 0 0 20px 0;
-                     }
-
-                     .ig-cta a {
-                         color: #772134;
-                         text-decoration: underline;
-                         display: block;
-                     }
-
-                     @media only screen and (max-width: 650px) {
-                         #card-select .ig-cta span, #end-screen .ig-cta span {
-                             display: none;
-                         }
-                     }
-
-                     #end-screen .ig-cta {
-                         position: absolute;
-                         text-align: center;
-                         margin-top: 14px;
-                     }
-
-                         #end-screen .ig-cta span {
-                             margin-bottom: 4px;
-                         }
-
-                         #end-screen .ig-cta a {
-                             position: relative;
-                         }
-
-                     @media only screen and (max-width: 650px) {
-                         .btn-rset.btn + .ig-cta {
-                             margin-top: 13px;
-                         }
-                     }
 
                      @media only screen and (max-width: 800px) {
                          #results-cont {
@@ -113,6 +39,8 @@
                      .btn-rset.btn {
                          margin: 10px auto 0 auto;
                          background-color: #517DA2;
+                         width: 200px;
+                        padding: 1px 0;
                      }
 
                      .btn.btn-rset:after {
@@ -181,11 +109,7 @@
                 <p class="count"><span>0</span>/6</p>
                 <a href="#" class="shuffle">Shuffle the Cards</a>
                 <a href="#" class="btn"><p>Get Your Reading</p></a>
-                <div class="mobile mobile-foot">
-                    <a href="https://www.psychicsource.com/" targt="_blank" class="logo"><img src="img/img-ps-logo.png"></a>
-                    <p>A <a href="https://www.psychicsource.com/psychic-advice/tarot-readings" target="blank">professional tarot card reading</a> can give insight to questions you have about your future.</p>
-                    <div class="clearfix"></div>
-                </div>
+                
             </div>
             <div id="end-screen" class="cont">
                 <img class="title" src="img/img-reading-title.png">
@@ -288,32 +212,15 @@
                                 <p class="descrip">The magician is a powerful card, filled with potential. He has all the worldly elements at his disposal and knows how to wield them to reach his own ends. You may crave this power for yourself, seeking to make sense of everything in front of you and turn it toward your purposes. In tune with the finer points of nature, the magician is shown in a garden. Your life, like this garden, is something you can cultivate carefully to bloom and grow when you possess both the necessary resources and the proper wisdom to guide your use of them.</p>
                                 <div class="btn-cont">
                                     <a href="#" class="btn-prev btn"><p>Prev Card</p></a>
-                                    <a href="#" class="btn-reset btn" >
+                                    <a href="#" class="btn btn-rset btn-reset" >
                                         <p>Start Over</p>
                                     </a>
-                                    <!-- <a href="https://www.psychicsource.com/our-psychics2/psychic-tools/90/15" class="btn-rset btn js-jump-link" target="_parent">
-                                        <p>Get a Live Tarot Reading</p>
-                                    </a> -->
-                                    <!-- <div class="ig-cta"><span>or<br /></span><a href="#" class="btn-reset">Start Over</a></div> -->
-
                                 </div>
                             </div>    
                         </div>
                     </div>
                 </div>
-                <!--<div class="mobile mobile-foot">
-                    <a href="https://www.psychicsource.com/" target="_blank" class="logo"><img src="img/img-ps-logo.png"></a>
-                    <p>A <a href="https://www.psychicsource.com/psychic-advice/tarot-readings" target="blank">professional tarot card reading</a> can give insight to questions you have about your future.</p>
-                    <div class="clearfix"></div>
-                </div>-->
             </div>
-
-            <!-- new footer for logo -->
-            <!-- <div id="footer-o">
-                <a href="https://www.psychicsource.com/" target="_blank" class="logo">
-                    <img src="img/img-ps-logo.png">
-                </a>
-            </div> -->
         </div>
 
         <script src="js/vendor/jquery-1.10.2.min.js"></script>

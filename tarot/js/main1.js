@@ -277,7 +277,7 @@ $(function(){
 				else this.mobile = false;
 
 			var stage = { height: 0, width: 0 };
-			stage.height = (this.mobile)? $(window).height() : $(window).height()-$('#footer').height();
+			stage.height = (this.mobile)? $(window).height() : $(window).height();
 			stage.width = $(window).width()*.7;
 
 			$('#card-select .card-cont').height(stage.height/3);
