@@ -497,8 +497,8 @@ $(function(){
 
 		init : function(){
             this.setStage();
-            //app.transitionScreen(2);
-            $('#proceed').on('click', function(e){ e.preventDefault(); app.transitionScreen(2); });
+            app.transitionScreen(2);
+            //$('#proceed').on('click', function(e){ e.preventDefault(); app.transitionScreen(2); });
 			$('#card-select .btn').on('click', function(e){ e.preventDefault(); app.transitionScreen(3); });
 			$('#card-select .shuffle').on('click', function(e){ e.preventDefault(); app.layCards(true); });
 			$('#card-select .card').on('click', function(e){ e.preventDefault(); app.cardClick(e.target); });
