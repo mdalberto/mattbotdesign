@@ -511,10 +511,10 @@ $(function(){
 	};
 
     //swap link based on user role
-    var memberRole = parent.memberIs;
-    if (memberRole == "ANON" || memberRole == "ANONREP" || memberRole == "COOKFRE" || memberRole == "COOKFREM" || memberRole == "LOGFRE" || memberRole == "LOGFREM") {
-        $(".js-jump-link").attr("href", "/secure/create-account");
-    }    
+    // var memberRole = parent.memberIs;
+    // if (memberRole == "ANON" || memberRole == "ANONREP" || memberRole == "COOKFRE" || memberRole == "COOKFREM" || memberRole == "LOGFRE" || memberRole == "LOGFREM") {
+    //     $(".js-jump-link").attr("href", "/secure/create-account");
+    // }    
 
 	$(window).on('load', function(){ app.init(); });
 });
