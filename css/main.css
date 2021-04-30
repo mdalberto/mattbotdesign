@@ -19,9 +19,16 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-family: Arial, sans-serif;
 }
 
+body { 
+    margin: 0px; 
+    padding: 0px; 
+    font-family: 'Open Sans', sans-serif; 
+    background-color: #fff;  
+  }
+  
 
 /*
  * Remove text-shadow in selection highlight:
@@ -297,4 +304,9 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
+}
+
+.padding{
+    padding:0 25px 25px 25px;
+
 }
