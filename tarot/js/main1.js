@@ -277,7 +277,7 @@ $(function(){
 				else this.mobile = false;
 
 			var stage = { height: 0, width: 0 };
-			stage.height = (this.mobile)? $(window).height() : $(window).height()-$('#footer').height();
+			stage.height = (this.mobile)? $(window).height() : $(window).height();
 			stage.width = $(window).width()*.7;
 
 			$('#card-select .card-cont').height(stage.height/3);
@@ -511,10 +511,10 @@ $(function(){
 	};
 
     //swap link based on user role
-    var memberRole = parent.memberIs;
-    if (memberRole == "ANON" || memberRole == "ANONREP" || memberRole == "COOKFRE" || memberRole == "COOKFREM" || memberRole == "LOGFRE" || memberRole == "LOGFREM") {
-        $(".js-jump-link").attr("href", "/secure/create-account");
-    }    
+    // var memberRole = parent.memberIs;
+    // if (memberRole == "ANON" || memberRole == "ANONREP" || memberRole == "COOKFRE" || memberRole == "COOKFREM" || memberRole == "LOGFRE" || memberRole == "LOGFREM") {
+    //     $(".js-jump-link").attr("href", "/secure/create-account");
+    // }    
 
 	$(window).on('load', function(){ app.init(); });
 });

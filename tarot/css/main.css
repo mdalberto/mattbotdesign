@@ -724,6 +724,11 @@ textarea {
     #results-cont .result-card .outline{
         top: 4%;
     }
+
+    #results-cont .result-card .card-img{
+        max-height: 320px;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
