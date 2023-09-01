@@ -1,0 +1,183 @@
+[
+    {
+        "id": "1",
+        "name": "Tom Fitzgerald",
+        "team": "New Jersey Devils,",
+        "role": "General Manager"
+    },
+    {
+        "id": "2",
+        "name": "Bill Guerin",
+        "team": "Minnesota,",
+        "role": "General Manager"
+    },
+    {
+        "id": "3",
+        "name": "Keith Yandle",
+        "team": "",
+        "role": "TNT & Sportsnet"
+    },
+    {
+        "id": "4",
+        "name": "Michael Grabner",
+        "team": "",
+        "role": ""
+    },
+    {
+        "id": "5",
+        "name": "Connor Jones",
+        "team": "",
+        "role": "Las Vegas Golden Nights NHL Scout"
+    },
+    {
+        "id": "",
+        "name": "Mike Sullivan",
+        "team": "Pittsburgh Penguins,",
+        "role": "Head Coach ('16 & '17 Stanley Cup Champion)"
+    },
+    {
+        "id": "",
+        "name": "Joe Sacco",
+        "team": "Boston Bruins,",
+        "role": "Assistant Coach"
+    },
+    {
+        "id": "",
+        "name": "Trent Whitfield",
+        "team": "Providence Bruins (AHL),",
+        "role": "Assistant Coach"
+    },
+    {
+        "id": "",
+        "name": "Robb Tallas",
+        "team": "Florida Panthers,",
+        "role": "Goaltending Coach"
+    },
+    {
+        "id": "",
+        "name": "Andy Chiodo",
+        "team": "Pittsburgh,",
+        "role": "Goalie coach"
+    },
+    {
+        "id": "",
+        "name": "Lee Stempniak",
+        "team": "AZ,",
+        "role": "NHL Dir of Player Development"
+    },
+    {
+        "id": "",
+        "name": "Mike Dunham",
+        "team": "Boston Bruins,",
+        "role": "Goaltending Coach"
+    },
+    {
+        "id": "",
+        "name": "Tom Kostopoulos",
+        "team": "Pitts,",
+        "role": "NHL Dir of Player Development"
+    },
+    {
+        "id": "",
+        "name": "Dennis Bonvie",
+        "team": "Chicago Blackhawks,",
+        "role": "Pro Scout"
+    },
+    {
+        "id": "",
+        "name": "Alex Westlund",
+        "team": "Detroit NHL,",
+        "role": "Goalie coach"
+    },
+    {
+        "id": "",
+        "name": "Brian Strait",
+        "team": "NJ,",
+        "role": "NHL Pro scout"
+    },
+    {
+        "id": "",
+        "name": "Jeff Malcolm",
+        "team": "Hartford,",
+        "role": "AHL Goalie Coach"
+    },
+    {
+        "id": "",
+        "name": "Jeff Glass",
+        "team": "San Diego,",
+        "role": "AHL Goalie Coach"
+    },
+    {
+        "id": "",
+        "name": "Chris Hajt",
+        "team": "AC Ontario,",
+        "role": "AHL"
+    },
+    {
+        "id": "",
+        "name": "Derek Damon",
+        "team": "HC Iowa,",
+        "role": "Heaertlanders"
+    },
+    {
+        "id": "",
+        "name": "Jason Morgan",
+        "team": "Glasgow EIHL,",
+        "role": "Head coach"
+    },
+    {
+        "id": "",
+        "name": "Chris Kelleher",
+        "team": "Minnesota Wild,",
+        "role": "Pro Scout"
+    },
+    {
+        "id": "",
+        "name": "Keith Aucoin",
+        "team": "Colorado,",
+        "role": "NHL Pro Scout"
+    },
+    {
+        "id": "",
+        "name": "Brendan Buckley",
+        "team": "Boston College,",
+        "role": "Assistant coach"
+    },
+    {
+        "id": "",
+        "name": "Mike Ayers",
+        "team": "Boston College,",
+        "role": "Assistant coach"
+    },
+    {
+        "id": "",
+        "name": "Glenn Stewart",
+        "team": "UNH,",
+        "role": "Assistant coach"
+    },
+    {
+        "id": "",
+        "name": "Ben Murphy",
+        "team": "Bentley,",
+        "role": "Assistant coach"
+    },
+    {
+        "id": "",
+        "name": "Mike Mottau",
+        "team": "",
+        "role": "NHL Scout"
+    },
+    {
+        "id": "",
+        "name": "Jeff Guiliano",
+        "team": "",
+        "role": "UNH AC"
+    },
+    {
+        "id": "",
+        "name": "Cody Wild",
+        "team": "Mount St Charles Academy",
+        "role": ""
+    }
+]
+
