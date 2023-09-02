@@ -1,11 +1,11 @@
 @import "fonts.css";
-@import "/assets/vendor/aos/aos.css";
-@import "/assets/vendor/bootstrap/css/bootstrap.min.css";
-@import "/assets/vendor/bootstrap-icons/bootstrap-icons.css";
-@import "/assets/vendor/boxicons/css/boxicons.min.css";
-@import "/assets/vendor/glightbox/css/glightbox.min.css";
-@import "/assets/vendor/remixicon/remixicon.css";
-@import "/assets/vendor/swiper/swiper-bundle.min.css";
+@import "../vendor/aos/aos.css";
+@import "../vendor/bootstrap/css/bootstrap.min.css";
+@import "../vendor/bootstrap-icons/bootstrap-icons.css";
+@import "../vendor/boxicons/css/boxicons.min.css";
+@import "../vendor/glightbox/css/glightbox.min.css";
+@import "../vendor/remixicon/remixicon.css";
+@import "../vendor/swiper/swiper-bundle.min.css";
 /**
 * Template Name: Arsha - v4.3.0
 * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -24,11 +24,11 @@ FCFDDB // yellow
 */
 
 :root {
-  --primary: #009245;
-  --primary-shade-20: #007838;
-  --secondary: #8CC63F;
-  --terchiary: #FCFDDB;
-  --primary-tint-20: #f1fde2;
+  --primary: #245971;
+  --primary-shade-20: #49B1E2;
+  --secondary: #49B1E2;
+  --terchiary: #49B1E2;
+  --primary-tint-20: #DBEFF9;
 }
 
 
@@ -111,6 +111,10 @@ font-size: 20px;
   border-color:  var(--primary);
 }
 
+
+.btn:hover{
+  cursor:pointer;
+}
 
 
 /*--------------------------------------------------------------
@@ -267,7 +271,7 @@ left:0;
 
 .navbar-mobile .nav-number{
   position:initial;
-  margin:10px 0 30px;
+  margin:40px 0 30px 0;
 }
 
 
@@ -299,8 +303,10 @@ left:0;
   font-weight: 500;
   color: black;
   white-space: nowrap;
-  transition: 0.3s;
+  position: relative;
+  /* transition: 0.3s; */
 }
+
 
 .navbar a i,
 .navbar a:focus i {
@@ -314,7 +320,25 @@ left:0;
 .navbar .active:focus,
 .navbar li:hover>a {
   color: var(--primary);
+  position: relative;
 }
+
+.navbar a.active::after,.navbar a:hover::after,
+.navbar .active:focus::after
+{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--primary);
+  right: 0;
+  top: 78%;
+  position: absolute;
+}
+.nav-link{
+  padding: 0.5rem 0;
+    margin: 0 1rem;
+  }
 
 .navbar .getstarted {
   padding: 8px 20px;
@@ -443,9 +467,11 @@ left:0;
 
 .mobile-nav-toggle{
   position: absolute;
-  top: 35px;
+  top: 15px;
   right: 15px;
   z-index: 1;
+  padding: 15px;
+  cursor:pointer;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -453,6 +479,8 @@ left:0;
   top: 15px;
   right: 15px;
   z-index: 1;
+  padding: 15px;
+  cursor:pointer;
 }
 
 
@@ -475,12 +503,13 @@ left:0;
 }
 
 .navbar-mobile:first-child {
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 
 .navbar-mobile a {
-  padding: 10px 20px;
+  padding: 10px 0px;
+  margin-bottom:16px;
   font-size: 15px;
   color: black;
   text-align: center;
@@ -603,12 +632,24 @@ section {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  section {
+    padding: 30px 0;
+  }
+}
+
 /* .section-bg {
   background-color: #f3f5fa;
 } */
 
 .section-title {
   padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .section-title  {
+    padding: 0;
+  }
 }
 
 .section-title h2 {
@@ -621,6 +662,12 @@ section {
   position: relative;
   color: black;
 }
+
+/* @media (max-width: 768px) {
+  .section-title  h2{
+    margin-bottom: 0;
+  }
+} */
 
 
 .section-title.text-center p {
@@ -725,7 +772,7 @@ section {
 .services{
   background-color: black;
   color:white;
-  background-image: url("/assets/img/shape.svg");
+  background-image: url("../img/shape.svg");
   background-position: -2000px center;
   background-repeat: no-repeat;
 }
@@ -736,10 +783,47 @@ section {
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
   background: #fff;
-  width:100%;
+  width:260px;
+  height:260px;
+  /* border-radius:1000px; */
   text-align:center;
+  /* //border: 12px solid var(--secondary); */
   
 }
+
+
+.diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: red;
+  position: relative;
+  top: -50px;
+}
+.diamond:after {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: red;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+  .services .icon-box{  
+    border: 10px solid var(--secondary);
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
 
 .services .icon-box .icon {
   margin-bottom: 10px;
@@ -757,6 +841,7 @@ section {
   font-size: 24px;
   max-width: 200px;
     margin: 10px auto 15px auto;
+    color:var(--primary);
 }
 
 .services .icon-box h4 a {
@@ -803,18 +888,18 @@ section {
 
 
 /*--------------------------------------------------------------
-# Athletes
+# Work
 --------------------------------------------------------------*/
-.athletes .section-title h2{
+.work .section-title h2{
   color:black;
 }
 /* 
-.athletes{
+.work{
   background-color: black;
   color:white;
 } */
 
-.athletes .icon-box {
+.work .icon-box {
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 0;
   transition: all ease-in-out 0.4s;
@@ -824,44 +909,47 @@ section {
   
 }
 
-.athletes .icon-box .icon {
+.work .icon-box .icon {
   margin-bottom: 10px;
 }
 
-.athletes .icon-box .icon img {
+.work .icon-box .icon img {
   color: var(--secondary);
   font-size: 36px;
   transition: 0.3s;
   width: 100%;
 }
 
-.athletes .icon-box h4 {
+.work .icon-box h4 {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   max-width: 200px;
     margin: 10px auto 0 auto;
+    color:var(--primary);
 }
 
-.athletes .icon-box h4 a {
+.work .icon-box h4 a {
   color: var(--primary);
   transition: ease-in-out 0.3s;
 }
 
-.athletes .icon-box p {
+.work .icon-box p {
   /* line-height: 24px;
   font-size: 14px; */
   margin-bottom: 0;
+  line-height: 20px;
+  padding-top: 5px;
 }
 
-.athletes .icon-box:hover {
+.work .icon-box:hover {
   transform: translateY(-10px);
 }
 
-.athletes .icon-box:hover h4 a {
+.work .icon-box:hover h4 a {
   color: var(--secondary);
 }
 
-.athletes .btn{
+.work .btn{
   min-width:200px;
 }
 
@@ -877,7 +965,7 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .slider-bgd{
-  background-image: url("/assets/img/slider-bgd.svg");
+  background-image: url("../img/slider-bgd.svg");
   width: 4527px;
   height:2613px;
   position: absolute;
@@ -1189,7 +1277,7 @@ overflow: hidden;
   top: 0;
   width: 2254px;
   height: 538px;
-  background-image: url(/assets/img/footer-bgd.svg);
+  background-image: url(../img/footer-bgd.svg);
   background-position: right top;
   background-repeat: no-repeat;
 }
