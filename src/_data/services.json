@@ -1,38 +1,38 @@
 [
     {
         "id": "dev",
-        "title": "Development & Draft Preperation",
+        "title": "User Interface Design",
         "image": "/assets/img/icon-nhl.svg",
-        "content": "<p>Buckley Sports Management understands the importance of physical conditioning and strength development for hockey players.</p><p>That is why a vast network of strength and conditioning experts and leading power skating coaches are made available to BSM athletes, so that they may continually train and develop regardless of their location. Understanding National Hockey League training programs, as well as the daily experiences of professional athletes, the BSM team works tirelessly to support each client's ability to reach their optimal physical form.</p><p>In addition to physical development, BSM also calls its athletes' attention to social development, media training, and draft preparation. Too often, such elements of the sports business are overlooked, and yet this is another area of focus which separates Buckley Sports Management from its competition.</p>"
+        "content": "<p></p>"
     },
     {
         "id": "contract",
-        "title": "Contract Negotiations",
+        "title": "Graphic Design",
         "image": "/assets/img/icon-contract.svg",
-        "content": "<p>Over the course of an athlete's career, multiple contracts will need to be executed accurately and professionally in order to ensure that the player has received fair compensation for his services.</p><p>With over 15 years of negotiating experience, Buckley Sports Management takes great pride in securing the very best for its clients in every deal. Whether through free agency, contract extension or arbitration, BSM's hands-on approach to negotiating adjusts to each individual client’s needs. Jerry Buckley’s hard work, professionalism and understanding of the collective bargaining agreement has gained him respect throughout the hockey community and insures that all clients are properly looked after at all times.</p>"
+        "content": "<p></p>"
     },
     {
         "id": "endorse",
-        "title": "Endorsement Opportunities",
+        "title": "Frontend Code",
         "image": "/assets/img/icon-endorse.svg",
-        "content": "<p>As professional players mature, opportunities arise for them to maximize their asset ability. Accordingly, BSM works with industry leaders to establish a relationship that benefits both parties in marketing synergy.</p>"
+        "content": "<p></p>"
     },
     {
         "id": "tax",
-        "title": "Tax Preperation",
+        "title": "UX Strategy",
         "image": "/assets/img/icon-tax.svg",
-        "content": "<p>When it comes time to file taxes, complications are commonplace, which is why BSM has accountants that help clients deal specifically with the various issues that US and Canadian tax laws can present.</p>"
+        "content": "<p></p>"
     },
     {
         "id": "eu",
-        "title": "European Placement",
+        "title": "UX Testing Strategy",
         "image": "/assets/img/icon-eu.svg",
-        "content": "<p>BSM works in partnership with Unlimited Sports Management (located in Europe) to help place players seeking professional employment outside of the United States and Canada. We strive to find the best situation possible for each player, with a team and location that fits each clients' hockey goals and family needs.</p><p>With many clients playing in Europe, Jerry Buckley understands what's involved in making the transition from living and playing in North America to doing so overseas, and can help clients navigate through difficulties, such as tricky tax issues and term lease concerns.</p>"
+        "content": "<p></p>"
     },
     {
         "id": "finance",
-        "title": "Financial Management",
+        "title": "Page Performance Guidance",
         "image": "/assets/img/icon-finance.svg",
-        "content": "<p>Buckley Sports Management educates its players and their families on how to properly manage financial matters. We closely monitor each player’s financial well-being and ensure that they are prepared to maintain their lifestyle once their playing days are over.</p><p>Advice and education in the areas of financial planning, estate planning and investment management are key areas of focus for the BSM team. Through the investment planning process, our players have access to the best investment firms in the world, in addition to the advice we provide on a regular basis.</p>"
+        "content": "<p></p>"
     }
 ]

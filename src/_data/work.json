@@ -2,9 +2,26 @@
     {
         "id": "1",
         "name": "Oreland Pack 88",
-        "team": "www.orelandpack88.com",
+        "team": "orelandpack88.com",
         "image": "/assets/img/work/orlandpack88-lg.jpg",
-		"imageSm": "/assets/img/work/oreland-xs.png"
+		"imageSm": "/assets/img/work/oreland-xs.png",
+        "url": "https://orelandpack88.com/"
+    },
+    {
+        "id": "1",
+        "name": "Buckley Sports Management",
+        "team": "buckleysports.com",
+        "image": "/assets/img/work/buckley-lg.jpg",
+		"imageSm": "/assets/img/work/buckley-xs.jpg",
+        "url": "https://mdalberto.github.io/buckley-dev/"
+    },
+    {
+        "id": "1",
+        "name": "Pentec Health Web",
+        "team": " --- ",
+        "image": "/assets/img/work/pentec-web-lg.jpg",
+		"imageSm": "/assets/img/work/pentec-web-xs.jpg",
+        "url": "https://www.figma.com/file/S3GL2h7d2oybZnl39yHGmb/Pentec-Health-Website?type=design&node-id=0%3A1&mode=design&t=mQsfaWWhmri4ZM8N-1"
     }
 ]
 
