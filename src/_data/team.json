@@ -3,16 +3,16 @@
         "id": "1",
         "name": "Matthew Dalberto",
         "title": "Founder / CEO",
-        "image": "/assets/img/bios/matt.jpg",
-		"imageSm": "/assets/img/bios/matt.jpg",
+        "image": "assets/img/bios/matt.jpg",
+		"imageSm": "assets/img/bios/matt.jpg",
         "link": "jerry",
         "content" : "<p></p>"
     },{
         "id": "2",
         "name": "",
         "title": "",
-        "image": "/assets/img/logo/neilson.jpg",
-		"imageSm": "/assets/img/logo/neilson.jpg",
+        "image": "assets/img/logo/neilson.jpg",
+		"imageSm": "assets/img/logo/neilson.jpg",
         "link": "",
         "content" : "<p></p>"
     }
