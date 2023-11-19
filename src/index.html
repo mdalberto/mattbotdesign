@@ -17,7 +17,7 @@ currentPage: homepage
           <div class="col-lg-8  align-items-center pt-4 pb-4">
           <p class="text-big">
 
-            Welcome to the portfolio of Matthew Dalberto, a Web Application UI Designer and Front-End Programmer extraordinaire. Step into a world where creativity and technology converge, and where every pixel tells a story. <!-- Explore a diverse collection of captivating projects that blend stunning design with seamless functionality. Join us on this digital adventure of innovation and inspiration!Welcome to the portfolio of [Designer/Programmer's Name], a Web Application UI Designer and Front-End Programmer extraordinaire. Step into a world where creativity and technology converge, and where every pixel tells a story. Explore a diverse collection of captivating projects that blend stunning design with seamless functionality. Join us on this digital adventure of innovation and inspiration!-->
+            Welcome to the portfolio of Matthew Dalberto, a Web Application UI Designer and Front-End Programmer. Step into a world where creativity and technology converge. <!-- Explore a diverse collection of captivating projects that blend stunning design with seamless functionality. Join us on this digital adventure of innovation and inspiration!Welcome to the portfolio of [Designer/Programmer's Name], a Web Application UI Designer and Front-End Programmer extraordinaire. Step into a world where creativity and technology converge, and where every pixel tells a story. Explore a diverse collection of captivating projects that blend stunning design with seamless functionality. Join us on this digital adventure of innovation and inspiration!-->
           
           </p></div> 
         </div>
@@ -32,15 +32,16 @@ currentPage: homepage
     <section id="work" class="work">
       <div class="container width-max-sm" data-aos="fade-up">
 
-        <div class="section-title text-center">
-          <h2>Our Work</h2>
+        <div class="section-title " style="max-width:800px; margin-left:auto; margin-right: auto;">
+          <h2>Work</h2>
+          <p>These projects are repersentives of the range of digital product types that has been worked on. For each one, stakeholder/customer requirements and goals were reviewed and from this, production of the user interface experience was completed. Types of activities/work completed: wireframing, mockups, prototypes, hi-fi designs. Appling the visual design and design system to the exeperience. In some cases re-branding. Also in some, frontend work was completed which includes using the given code architecutre to complete html/css and javascript. They product types range from marketing single page sites to deep feature rich console application, to mobile applications.</p>
         </div>
 
         <div class="row justify-content-center ">
 
           {% for work in work %}
           
-            <div style="cursor:pointer;" onclick="window.open('{{work.url | safe }}');" class="col-xl-2 col-md-2 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="window.open('{{work.url | safe }}');" class="col-xl-3 col-md-3 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="{{work.imageSm}}" /></div>
                 <!-- <h4>{{work.name}}</h4> -->
@@ -66,7 +67,7 @@ currentPage: homepage
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title text-center">
+        <div class="section-title" style="max-width:800px; margin-left:auto; margin-right: auto;">
           <h2>Client Services</h2>
           <p>Mattbotdesign is committed to the long term success of its client. We&nbsp;offer&nbsp;assistance&nbsp;with:</p>
         </div>
@@ -74,8 +75,9 @@ currentPage: homepage
         <div class="row justify-content-center mr-0 ml-0 ">
 
           {% for service in services %}
+          <div  style="cursor:auto" class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6 d-flex mt-4 mt-md-0 mb-md-5  text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
 
-            <div  style="cursor:pointer;"  onclick="location.href='{{global.baseUrl}}services#{{service.id}}';" class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6 d-flex mt-4 mt-md-0 mb-md-5  text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+            <!-- <div  style="cursor:pointer;"  onclick="location.href='{{global.baseUrl}}services#{{service.id}}';" class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6 d-flex mt-4 mt-md-0 mb-md-5  text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200"> -->
               <div class="icon-box d-flex justify-content-center align-items-center">
                 <!-- <div class="icon"><img src="{{service.image}}" /></div> -->
                 <h4>{{service.title}}</h4>
@@ -94,7 +96,7 @@ currentPage: homepage
 
     <!-- ======= Team Section ======= -->
     <!-- ======= Our Athletes Section ======= -->
-    <section id="athletes" class="work">
+    <!-- <section id="athletes" class="work">
       <div class="container width-max-sm" data-aos="fade-up">
 
         <div class="section-title text-center">
@@ -123,35 +125,35 @@ currentPage: homepage
         </a>
       </div>
       </div>
-    </section>
+    </section> -->
   
     <!-- End Team Section -->
 
-    <div class="container aos-init aos-animate" data-aos="fade-up"><hr /></div>
+    <!-- <div class="container aos-init aos-animate" data-aos="fade-up"><hr /></div> -->
 
       <!-- ======= Scouting Section ======= -->
       <section id="scouting" class="scouting">
-        <div class="container width-max-sm" data-aos="fade-up">
+        <div class="container width-max-xs" data-aos="fade-up" style="max-width:800px">
   
-          <div class="section-title text-center">
+          <div class="section-title ">
             <h2>Research, Design, Code</h2>
-          <!-- <p>Throughout the years</p> -->
+          <p>Mattbotdesign offers a blend of UCD and technology expertise. Our passion is to create useable, aesthetically-pleasing solutions, that allow for users to get tasks done with least amount of effort possible, while balancing business goals. Benefits that are brought to any company are the ability to take a project from start to finish, exceeding client expectations, and finding new and innovative ways of solving challenges.
+          </p><p>
+            <strong>Front-End Development Tools and Skills (currently using): </strong><br/>
+            HTML/CSS, 11ty, Angular, ionic, Visual Studio & VS Code, Wordpress, .NET MVC, Git/Github, SASS, Bootstrap
+            </p>
+            <p>
+              <strong>Interaction Design and Visual design tools:</strong><br/>
+            Figma, Photoshop & Illustrator, Adobe XD
+            </p><p>
+              <strong>User Testing: </strong><br/>
+            Optimizely, Trymyui
+            </p><p>
+              <strong>Methodologies: </strong><br/>
+            User Center Design, Lean UX, Agile and Scrum software development, Lean Startup</p>
           </div>
   
-          <div class="row justify-content-center ">
-  
-              <div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-12 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                
-  
-              <ul class="box">
-                {% for former in former %}
-                <li><strong>{{former.name}}</strong> – {{former.team}} <i>{{former.role}}</i></li>
-                  {% endfor %}
-              </ul>
-                </div>
-              </div>
-
-          </div>
+          
 
         </div>
       </section>
