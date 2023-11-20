@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oreland Pack 88 - Class B order form</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+    .image-box {
+      /* //width: 250px; */
+      text-align: center;
+      /* background: #E9E8E7; */
+      background-color: white;
+      padding: 10px;
+      position: relative;
+      border-radius: 8px;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      border:1px solid #E9E8E7;
+    }
+    .image-box img {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 7px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .price{
+      font-weight: bold;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      border-radius: 50px;
+      width: 30px;
+      height: 30px;
+      font-size: 13px;
+      display: flex;
+      background-color: #ffeb79;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: -1px;
+      zoom: 1.25;
+    }
+    a{color:rgb(24 72 152)}
+
+    .highlight{
+      border:#ffeb79 6px solid;
+      padding:5px;
+    }
+    </style>
+</head>
+<body class="bg-body-tertiary">
+
+
+
+    <div class="container">
+        <main>
+          <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="/images/logo.jpg" alt="" width="100" height="100">
+            <h2>Pack 88 Class B Order Form</h2>
+            <p class="lead"></p>
+          </div>
+      
+          <div class="row g-5">
+            
+            <!------------- -->
+            
+            <!-- <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">Your cart</span>
+                <span class="badge bg-primary rounded-pill">3</span>
+              </h4>
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Product name</h6>
+                    <small class="text-body-secondary">Brief description</small>
+                  </div>
+                  <span class="text-body-secondary">$12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Second product</h6>
+                    <small class="text-body-secondary">Brief description</small>
+                  </div>
+                  <span class="text-body-secondary">$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Third item</h6>
+                    <small class="text-body-secondary">Brief description</small>
+                  </div>
+                  <span class="text-body-secondary">$5</span>
+                </li>
+
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Total (USD)</span>
+                  <strong>$20</strong>
+                </li>
+              </ul>
+      
+            </div> -->
+
+            <!------------- -->
+            <div class="col-md-12 col-lg-12">
+
+              <form class="needs-validation mb-5" novalidate="" method="POST" action="https://script.google.com/macros/s/AKfycbwpVm6mP9vseJobuLIykW7rWMGmZglm2_gZufL02I0vol9b5wBKlbUQnjbP99IJq5zOaA/exec">
+
+                <div class="row g-3">
+                  <h4 class="mb-1">Kids Hoodies</h4>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/hoodie-1.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$35</div>
+                        <div class="mt-2">
+                            <!-- <input id="1_kids_SM_hoodie" type="checkbox" name="1_kids_SM_hoodie" value="1_kids_SM_hoodie" class="form-check-input"> -->
+                            <label class="mb-2">SM Hoodie (kids)</label>
+                        </div>
+                            <select name="kids_SM_hoodie_select" id="kids_SM_hoodie_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_kids_SM_hoodie">1</option>
+                            <option value="2_kids_SM_hoodie">2</option>
+                            <option value="3_kids_SM_hoodie">3</option>
+                            <option value="4_kids_SM_hoodie">4</option>
+                            <option value="5_kids_SM_hoodie">5</option>
+                            <option value="6_kids_SM_hoodie">6</option>
+                        </select>
+                        <input type="hidden" id="kids_SM_hoodie_cost" name="kids_SM_hoodie_cost" value="35">
+                        <div class="result">Result: $<span id="kids_SM_hoodie_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/hoodie-2.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$35</div>
+                        <div class="mt-2">
+                            <!-- <input id="2_kids_MD_hoodie" type="checkbox" name="2_kids_MD_hoodie" value="2_kids_MD_hoodie" class="form-check-input"> -->
+                            <label class="mb-2">MD Hoodie (kids)</label>
+                        </div>
+                            <select name="kids_MD_hoodie_select" id="kids_MD_hoodie_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_kids_MD_hoodie">1</option>
+                            <option value="2_kids_MD_hoodie">2</option>
+                            <option value="3_kids_MD_hoodie">3</option>
+                            <option value="4_kids_MD_hoodie">4</option>
+                            <option value="5_kids_MD_hoodie">5</option>
+                            <option value="6_kids_MD_hoodie">6</option>
+                        </select>
+                        <input type="hidden" id="kids_MD_hoodie_cost" name="kids_MD_hoodie_cost" value="35">
+                        <div class="result">Result: $<span id="kids_MD_hoodie_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/hoodie-3.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$35</div>
+                        <div class="mt-2">
+                            <!-- <input id="3_kids_LG_hoodie" type="checkbox" name="3_kids_LG_hoodie" value="3_kids_LG_hoodie" class="form-check-input"> -->
+                            <label class="mb-2">LG Hoodie (kids)</label>
+                        </div>
+                            <select name="kids_LG_hoodie_select" id="kids_LG_hoodie_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_kids_LG_hoodie">1</option>
+                            <option value="2_kids_LG_hoodie">2</option>
+                            <option value="3_kids_LG_hoodie">3</option>
+                            <option value="4_kids_LG_hoodie">4</option>
+                            <option value="5_kids_LG_hoodie">5</option>
+                            <option value="6_kids_LG_hoodie">6</option>
+                        </select>
+                        <input type="hidden" id="kids_LG_hoodie_cost" name="kids_LG_hoodie_cost" value="35">
+                        <div class="result">Result: $<span id="kids_LG_hoodie_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/hoodie-4.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$35</div>
+                        <div class="mt-2">
+                            <!-- <input id="4_kids_XL_hoodie" type="checkbox" name="4_kids_XL_hoodie" value="4_kids_XL_hoodie" class="form-check-input"> -->
+                            <label class="mb-2">XL Hoodie (kids)</label>
+                        </div>
+                            <select name="kids_XL_hoodie_select" id="kids_XL_hoodie_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_kids_XL_hoodie">1</option>
+                            <option value="2_kids_XL_hoodie">2</option>
+                            <option value="3_kids_XL_hoodie">3</option>
+                            <option value="4_kids_XL_hoodie">4</option>
+                            <option value="5_kids_XL_hoodie">5</option>
+                            <option value="6_kids_XL_hoodie">6</option>
+                        </select>
+                        <input type="hidden" id="kids_XL_hoodie_cost" name="kids_XL_hoodie_cost" value="35">
+                        <div class="result">Result: $<span id="kids_XL_hoodie_result">0</span></div>
+                      </div>
+                    </div>
+                  
+
+
+                  <h4 class="mb-1 mt-5">Adult Hoodies</h4>
+
+
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/hoodie-1.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$35</div>
+                        <div class="mt-2">
+                            <!-- <input id="1_adults_1_hoodie" type="checkbox" name="1_adults_1_hoodie" value="1_adults_1_hoodie" class="form-check-input"> -->
+                            <label class="mb-2">SM Hoodie (Adults)</label>
+                        </div>
+                            <select name="adults_SM_hoodie_select" id="adults_SM_hoodie_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_adult_SM_hoodie">1</option>
+                            <option value="2_adult_SM_hoodie">2</option>
+                            <option value="3_adult_SM_hoodie">3</option>
+                            <option value="4_adult_SM_hoodie">4</option>
+                            <option value="5_adult_SM_hoodie">5</option>
+                            <option value="6_adult_SM_hoodie">6</option>
+                        </select>
+                        <input type="hidden" id="adults_SM_hoodie_cost" name="adults_SM_hoodie_cost" value="35">
+                        <div class="result">Result: $<span id="adults_SM_hoodie_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/hoodie-2.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$35</div>
+                        <div class="mt-2">
+                            <!-- <input id="2_adults_2_hoodie" type="checkbox" name="2_adults_2_hoodie" value="2_adults_2_hoodie" class="form-check-input"> -->
+                            <label class="mb-2">MD Hoodie (Adults)</label>
+                        </div>
+                            <select name="adults_MD_hoodie_select" id="adults_MD_hoodie_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_adult_MD_hoodie">1</option>
+                            <option value="2_adult_MD_hoodie">2</option>
+                            <option value="3_adult_MD_hoodie">3</option>
+                            <option value="4_adult_MD_hoodie">4</option>
+                            <option value="5_adult_MD_hoodie">5</option>
+                            <option value="6_adult_MD_hoodie">6</option>
+                        </select>
+                        <input type="hidden" id="adults_MD_hoodie_cost" name="adults_MD_hoodie_cost" value="35">
+                        <div class="result">Result: $<span id="adults_MD_hoodie_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/hoodie-3.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$35</div>
+                        <div class="mt-2">
+                            <!-- <input id="3_adults_3_hoodie" type="checkbox" name="3_adults_3_hoodie" value="3_adults_3_hoodie" class="form-check-input"> -->
+                            <label class="mb-2">LG Hoodie (Adults)</label>
+                        </div>
+                            <select name="adults_LG_hoodie_select" id="adults_LG_hoodie_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_adult_LG_hoodie">1</option>
+                            <option value="2_adult_LG_hoodie">2</option>
+                            <option value="3_adult_LG_hoodie">3</option>
+                            <option value="4_adult_LG_hoodie">4</option>
+                            <option value="5_adult_LG_hoodie">5</option>
+                            <option value="6_adult_LG_hoodie">6</option>
+                        </select>
+                        <input type="hidden" id="adults_LG_hoodie_cost" name="adults_LG_hoodie_cost" value="35">
+                        <div class="result">Result: $<span id="adults_LG_hoodie_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/hoodie-4.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$35</div>
+                        <div class="mt-2">
+                            <!-- <input id="4_adults_4_hoodie" type="checkbox" name="4_adults_4_hoodie" value="4_adults_4_hoodie" class="form-check-input"> -->
+                            <label class="mb-2">XL Hoodie (Adults)</label>
+                        </div>
+                            <select name="adults_XL_hoodie_select" id="adults_XL_hoodie_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_adult_XL_hoodie">1</option>
+                            <option value="2_adult_XL_hoodie">2</option>
+                            <option value="3_adult_XL_hoodie">3</option>
+                            <option value="4_adult_XL_hoodie">4</option>
+                            <option value="5_adult_XL_hoodie">5</option>
+                            <option value="6_adult_XL_hoodie">6</option>
+                        </select>
+                        <input type="hidden" id="adults_XL_hoodie_cost" name="adults_XL_hoodie_cost" value="35">
+                        <div class="result">Result: $<span id="adults_XL_hoodie_result">0</span></div>
+                      </div>
+                    </div>
+                  
+
+
+                  <h4 class="mb-1 mt-5">Kids T-Shirt</h4>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/shirt-1.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$25</div>
+                        <div class="mt-2">
+                            <!-- <input id="1" type="checkbox" name="1" value="1" class="form-check-input"> -->
+                            <label class="mb-2">SM T-Shirt (kids)</label>
+                        </div>
+                            <select name="kids_SM_tshirt_select" id="kids_SM_tshirt_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_kids_SM_tshirt">1</option>
+                            <option value="2_kids_SM_tshirt">2</option>
+                            <option value="3_kids_SM_tshirt">3</option>
+                            <option value="4_kids_SM_tshirt">4</option>
+                            <option value="5_kids_SM_tshirt">5</option>
+                            <option value="6_kids_SM_tshirt">6</option>
+                        </select>
+                        <input type="hidden" id="kids_SM_tshirt_cost" name="kids_SM_tshirt_cost" value="25">
+                        <div class="result">Result: $<span id="kids_SM_tshirt_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/shirt-2.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$25</div>
+                        <div class="mt-2">
+                            <!-- <input id="2" type="checkbox" name="2" value="2" class="form-check-input"> -->
+                            <label class="mb-2">MD T-Shirt (kids)</label>
+                        </div>
+                            <select name="kids_MD_tshirt_select" id="kids_MD_tshirt_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_kids_MD_tshirt">1</option>
+                            <option value="2_kids_MD_tshirt">2</option>
+                            <option value="3_kids_MD_tshirt">3</option>
+                            <option value="4_kids_MD_tshirt">4</option>
+                            <option value="5_kids_MD_tshirt">5</option>
+                            <option value="6_kids_MD_tshirt">6</option>
+                        </select>
+                        <input type="hidden" id="kids_MD_tshirt_cost" name="kids_MD_tshirt_cost" value="25">
+                        <div class="result">Result: $<span id="kids_MD_tshirt_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/shirt-3.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$25</div>
+                        <div class="mt-2">
+                            <!-- <input id="3" type="checkbox" name="3" value="3" class="form-check-input"> -->
+                            <label class="mb-2">LG T-Shirt (kids)</label>
+                        </div>
+                            <select name="kids_LG_tshirt_select" id="kids_LG_tshirt_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_kids_LG_tshirt">1</option>
+                            <option value="2_kids_LG_tshirt">2</option>
+                            <option value="3_kids_LG_tshirt">3</option>
+                            <option value="4_kids_LG_tshirt">4</option>
+                            <option value="5_kids_LG_tshirt">5</option>
+                            <option value="6_kids_LG_tshirt">6</option>
+                        </select>
+                        <input type="hidden" id="kids_LG_tshirt_cost" name="kids_LG_tshirt_cost" value="25">
+                        <div class="result">Result: $<span id="kids_LG_tshirt_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/shirt-4.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$25</div>
+                        <div class="mt-2">
+                            <!-- <input id="4" type="checkbox" name="4" value="4" class="form-check-input"> -->
+                            <label class="mb-2">XL T-Shirt (kids)</label>
+                        </div>
+                            <select name="kids_XL_tshirt_select" id="kids_XL_tshirt_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_kids_XL_tshirt">1</option>
+                            <option value="2_kids_XL_tshirt">2</option>
+                            <option value="3_kids_XL_tshirt">3</option>
+                            <option value="4_kids_XL_tshirt">4</option>
+                            <option value="5_kids_XL_tshirt">5</option>
+                            <option value="6_kids_XL_tshirt">6</option>
+                        </select>
+                        <input type="hidden" id="kids_XL_tshirt_cost" name="kids_XL_tshirt_cost" value="25">
+                        <div class="result">Result: $<span id="kids_XL_tshirt_result">0</span></div>
+                      </div>
+                    </div>
+                  
+
+
+                  <h4 class="mb-1 mt-5">Adult T-Shirt</h4>
+
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/shirt-1.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$25</div>
+                        <div class="mt-2">
+                            <!-- <input id="1" type="checkbox" name="1" value="1" class="form-check-input"> -->
+                            <label class="mb-2">SM T-Shirt (Adults)</label>
+                        </div>
+                            <select name="adults_SM_tshirt_select" id="adults_SM_tshirt_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_adults_SM_tshirt">1</option>
+                            <option value="2_adults_SM_tshirt">2</option>
+                            <option value="3_adults_SM_tshirt">3</option>
+                            <option value="4_adults_SM_tshirt">4</option>
+                            <option value="5_adults_SM_tshirt">5</option>
+                            <option value="6_adults_SM_tshirt">6</option>
+                        </select>
+                        <input type="hidden" id="adults_SM_tshirt_cost" name="adults_SM_tshirt_cost" value="25">
+                        <div class="result">Result: $<span id="adults_SM_tshirt_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/shirt-2.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$25</div>
+                        <div class="mt-2">
+                            <!-- <input id="2" type="checkbox" name="2" value="2" class="form-check-input"> -->
+                            <label class="mb-2">MD T-Shirt (Adults)</label>
+                        </div>
+                            <select name="adults_MD_tshirt_select" id="adults_MD_tshirt_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_adults_MD_tshirt">1</option>
+                            <option value="2_adults_MD_tshirt">2</option>
+                            <option value="3_adults_MD_tshirt">3</option>
+                            <option value="4_adults_MD_tshirt">4</option>
+                            <option value="5_adults_MD_tshirt">5</option>
+                            <option value="6_adults_MD_tshirt">6</option>
+                        </select>
+                        <input type="hidden" id="adults_MD_tshirt_cost" name="adults_MD_tshirt_cost" value="25">
+                        <div class="result">Result: $<span id="adults_MD_tshirt_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/shirt-3.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$25</div>
+                        <div class="mt-2">
+                            <!-- <input id="3" type="checkbox" name="3" value="3" class="form-check-input"> -->
+                            <label class="mb-2">LG T-Shirt (Adults)</label>
+                        </div>
+                            <select name="adults_LG_tshirt_select" id="adults_LG_tshirt_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_adults_LG_tshirt">1</option>
+                            <option value="2_adults_LG_tshirt">2</option>
+                            <option value="3_adults_LG_tshirt">3</option>
+                            <option value="4_adults_LG_tshirt">4</option>
+                            <option value="5_adults_LG_tshirt">5</option>
+                            <option value="6_adults_LG_tshirt">6</option>
+                        </select>
+                        <input type="hidden" id="adults_LG_tshirt_cost" name="adults_LG_tshirt_cost" value="25">
+                        <div class="result">Result: $<span id="adults_LG_tshirt_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/shirt-4.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$25</div>
+                        <div class="mt-2">
+                            <!-- <input id="4" type="checkbox" name="4" value="4" class="form-check-input"> -->
+                            <label class="mb-2">XL T-Shirt (Adults)</label>
+                        </div>
+                            <select name="adults_XL_tshirt_select" id="adults_XL_tshirt_select" class="form-select" style="max-width:120px; margin:0 auto">
+
+                            <option value="0">-- QTY --</option>
+                            <option value="1_adults_XL_tshirt">1</option>
+                            <option value="2_adults_XL_tshirt">2</option>
+                            <option value="3_adults_XL_tshirt">3</option>
+                            <option value="4_adults_XL_tshirt">4</option>
+                            <option value="5_adults_XL_tshirt">5</option>
+                            <option value="6_adults_XL_tshirt">6</option>
+                        </select>
+                        <input type="hidden" id="adults_XL_tshirt_cost" name="adults_XL_tshirt_cost" value="25">
+                        <div class="result">Result: $<span id="adults_XL_tshirt_result">0</span></div>
+                      </div>
+                    </div>
+                  
+
+
+                  <h4 class="mb-1 mt-5">Other</h4>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/other-1.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$24</div>
+                        <div class="mt-2">
+                            <!-- <input id="1_other" type="checkbox" name="1_other" value="1_other" class="form-check-input"> -->
+                            <label class="mb-2">Mesh Hat</label>
+                        </div>
+                            <select name="Mesh Hat_select" id="Mesh Hat_select" class="form-select" style="max-width:120px; margin:0 auto">
+                                <option value="0">-- QTY --</option>
+                                <option value="1_Mesh Hat">1</option>
+                                <option value="2_Mesh Hat">2</option>
+                                <option value="3_Mesh Hat">3</option>
+                                <option value="4_Mesh Hat">4</option>
+                                <option value="5_Mesh Hat">5</option>
+                                <option value="6_Mesh Hat">6</option>
+                            </select>
+                            <input type="hidden" id="Mesh Hat_cost" name="Mesh Hat_cost" value="24">
+                            <div class="result">Result: $<span id="Mesh Hat_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/other-2.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$24</div>
+                        <div class="mt-2">
+                            <!-- <input id="2_other" type="checkbox" name="2_other" value="2_other" class="form-check-input"> -->
+                            <label class="mb-2">Hat</label>
+                        </div>
+                            <select name="Hat_select" id="Hat_select" class="form-select" style="max-width:120px; margin:0 auto">
+                                <option value="0">-- QTY --</option>
+                                <option value="1_Hat">1</option>
+                                <option value="2_Hat">2</option>
+                                <option value="3_Hat">3</option>
+                                <option value="4_Hat">4</option>
+                                <option value="5_Hat">5</option>
+                                <option value="6_Hat">6</option>
+                            </select>
+                            <input type="hidden" id="Hat_cost" name="Hat_cost" value="24">
+                            <div class="result">Result: $<span id="Hat_result">0</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="col-6 col-sm-3">
+                      <div class="image-box">
+                        <img src="/images/other-3.jpg" onClick="toggleCheck(this);">
+                        <div class="price">$22</div>
+                        <div class="mt-2">
+                            <!-- <input id="3_other" type="checkbox" name="3_other" value="3_other" class="form-check-input"> -->
+                            <label class="mb-2">Beenie</label>
+                        </div>
+                            <select name="Beenie_select" id="Beenie_select" class="form-select" style="max-width:120px; margin:0 auto">
+                                <option value="0">-- QTY --</option>
+                                <option value="1_Beenie">1</option>
+                                <option value="2_Beenie">2</option>
+                                <option value="3_Beenie">3</option>
+                                <option value="4_Beenie">4</option>
+                                <option value="5_Beenie">5</option>
+                                <option value="6_Beenie">6</option>
+                            </select>
+                            <input type="hidden" id="Beenie_cost" name="Beenie_cost" value="22">
+                            <div class="result">Result: $<span id="Beenie_result">0</span></div>
+                      </div>
+                    </div>
+                  
+
+
+                  <h4 class="mb-1 mt-5">Your Information</h4>
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+                  </div>
+                    <div class="col-sm-6">
+                      <label for="lastName" class="form-label">Last name</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                      <div class="invalid-feedback">
+                        Valid last name is required.
+                      </div>
+                    </div>
+        
+                    <div class="col-6">
+                      <label for="scout" class="form-label">Scout's name</label>
+                      <input type="text" class="form-control" id="scout" placeholder="" required="">
+                      <div class="invalid-feedback">
+                          Your scout is required.
+                        </div>
+                    </div>
+        
+                    <div class="col-12">
+                      <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                      <input type="email" class="form-control" id="email" placeholder="">
+                      <div class="invalid-feedback">
+                        Please enter a valid email address.
+                      </div>
+                    </div>
+        
+                    <div class="col-12">
+                      <label for="address" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="address" placeholder="" required="">
+                      <div class="invalid-feedback">
+                        Please enter your shipping address.
+                      </div>
+                    </div>
+        
+                    <div class="col-12">
+                      <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+                      <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                    </div>
+        
+                    <!-- <div class="col-md-5">
+                      <label for="country" class="form-label">Country</label>
+                      <select class="form-select" id="country" required="">
+                        <option value="">Choose...</option>
+                        <option>United States</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid country.
+                      </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                      <label for="state" class="form-label">State</label>
+                      <select class="form-select" id="state" required="">
+                        <option value="">Choose...</option>
+                        <option>California</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please provide a valid state.
+                      </div>
+                    </div>
+         -->
+                    <div class="col-md-3">
+                      <label for="zip" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="zip" placeholder="" required="">
+                      <div class="invalid-feedback">
+                        Zip code required.
+                      </div>
+                    </div>
+                  </div>
+
+      
+                <!-- <hr class="my-4">
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="same-address">
+                  <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                </div>
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="save-info">
+                  <label class="form-check-label" for="save-info">Save this information for next time</label>
+                </div> -->
+      
+                <!-- <hr class="my-4"> -->
+      
+                
+                <h4 class="mb-3 mt-5"><div id="totalResult"><strong>Your Total: $<span id="overallResult">0</span></strong></div></h4>
+                <input type="hidden" id="overallHidden" name="overallHidden" value="0">
+                <p>Please make payment via Venmo to <strong><a target="_blank" href="https://venmo.com/u/Lori-Sussman-2">@Lori-Sussman-2</a></strong>.<br>
+                  2023 Order Deadline: <strong>Mon - 12/4/2023</strong>.<br>
+                  Estimated date of delivery: <strong>Wed - 12/20/2023</strong>.</p>
+                <!-- <p>Questions or support? Please email <a href="mailto:orelandpack88.com">orelandpack88@gmail.com</a>.</p> -->
+                <!-- <div class="my-3">
+                  <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                    <label class="form-check-label" for="credit">Credit card</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                    <label class="form-check-label" for="debit">Debit card</label>
+                  </div>
+                </div> -->
+
+      
+                <!-- <hr class="my-4"> -->
+      
+               <div class="mt-5"> <button class="w-100 btn btn-primary btn-lg" type="submit" style="max-width: 320px;
+                height: 50px;">Place Order Request</button>  </div>
+              </form>
+            </div>
+          </div>
+        </main>
+      
+        <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+          <p class="mb-1">©2023 Oreland Pack 88</p>
+          <ul class="list-inline">
+            <!-- <li class="list-inline-item"><a href="https://orelandpack88.com" target="_blank">https://orelandpack88.com</a></li> -->
+            <!-- <li class="list-inline-item"><a href="#">Terms</a></li> -->
+            <li class="list-inline-item">Questions or support? Email <a href="mailto:orelandpack88.com">orelandpack88@gmail.com</a>.</li>
+          </ul>
+        </footer>
+      </div>
+
+
+    <script>
+    // // Get all select elements on the page
+    // var selectElements = document.querySelectorAll('select');
+
+    // // Add event listener to each select element
+    // selectElements.forEach(function(select) {
+    //   select.addEventListener('change', function() {
+    //     var selectedValue = this.value;
+    //     var parentDiv = this.parentElement;
+
+    //     // Check if the selected value is not 0
+    //     if (selectedValue !== '0') {
+    //       // Add the 'highlight' class to the parent div
+    //       parentDiv.classList.add('highlight');
+    //     } else {
+    //       // Remove the 'highlight' class if the selected value is 0
+    //       parentDiv.classList.remove('highlight');
+    //     }
+    //   });
+    // });
+
+    // Initialize the total variable
+    var total = 0;
+
+        // Initialize an object to store previous results
+        var previousResults = {};
+
+       // Get all select elements on the page
+       var selectElements = document.querySelectorAll('select');
+
+      // Add event listener to each select element
+      selectElements.forEach(function(select) {
+        select.addEventListener('change', function() {
+          var selectedValue = parseFloat(this.value);
+          var parentDiv = this.parentElement;
+
+          // Check if the selected value is not 0
+          if (selectedValue !== 0) {
+            // Add the 'highlight' class to the parent div
+            parentDiv.classList.add('highlight');
+          } else {
+            // Remove the 'highlight' class if the selected value is 0
+            parentDiv.classList.remove('highlight');
+          }
+
+          // Get the input file element that comes after the select
+          var inputFile = parentDiv.querySelector('input[type="hidden"]');
+
+          // Get the file value and convert it to a number
+          var fileValue = parseFloat(inputFile.value) || 0;
+
+          // Multiply the selected value by the file value
+          var result = selectedValue * fileValue;
+
+          console.log('Result:', result);
+
+          
+          // Get the result span element
+          var resultSpan = parentDiv.querySelector('.result span');
+
+       
+
+        // Set the inner HTML of the result span with the calculated result
+        resultSpan.innerHTML = result;
+
+        // Check if there is a previous result for this select
+        if (previousResults.hasOwnProperty(select.id)) {
+          // Subtract the previous result from the total
+          total -= previousResults[select.id];
+        }
+
+        // Add the new result to the total
+        total += result;
+
+        // Store the current result for future subtraction
+        previousResults[select.id] = result;
+
+        // Get the overall result span element
+        var overallResultSpan = document.getElementById('overallResult');
+        var overallResultHidden = document.getElementById('overallHidden');
+        // Set the inner HTML of the overall result span with the total
+        overallResultSpan.innerHTML = total;
+        overallResultHidden.value= total;
+
+       
+        });
+
+
+      });
+
+    </script>
+</body>
+</html>
