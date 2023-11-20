@@ -4,6 +4,8 @@
 
 module.exports = function(eleventyConfig){
     eleventyConfig.addPassthroughCopy("src/assets/");
+    eleventyConfig.addPassthroughCopy("src/images/");
+
     eleventyConfig.addWatchTarget("src/css/");
      eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
     //   // The base URL: defaults to Path Prefix
