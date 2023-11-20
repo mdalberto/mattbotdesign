@@ -65,7 +65,8 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
           <div class="py-5 text-center">
             <img class="d-block mx-auto mb-4" src="/images/logo.jpg" alt="" width="100" height="100">
             <h2>Pack 88 Class B Order Form</h2>
-            <p class="lead"></p>
+            <p class="lead">'Class B' shirts/sweatshirts are cub scout uniforms that are worn at causal Pack events and outings.
+            </p>
           </div>
       
           <div class="row g-5">
@@ -108,13 +109,15 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
       
             </div> -->
 
+            <!-- For array:
+            'Date', 'firstName', 'lastName', 'email', 'scout', 'address', 'zip', 'total', {% for swag in 88_swag_loop %}'kids_{{swag.title}}_hoodie_select', {% endfor %} {% for swag in 88_swag_loop %}'adults_{{swag.title}}_hoodie_select', {% endfor %} {% for swag in 88_swag_loop %}'kids_{{swag.title}}_tshirt_select', {% endfor %} {% for swag in 88_swag_loop %}'adults_{{swag.title}}_tshirt_select', {% endfor %}{% for swag in 88_swag_other %}'{{swag.title}}_select', {% endfor %} -->
             <!------------- -->
             <div class="col-md-12 col-lg-12">
 
-              <form class="needs-validation mb-5" novalidate="" method="POST" action="https://script.google.com/macros/s/AKfycbwpVm6mP9vseJobuLIykW7rWMGmZglm2_gZufL02I0vol9b5wBKlbUQnjbP99IJq5zOaA/exec">
+              <form class="needs-validation mb-5" novalidate="" method="POST" action="https://script.google.com/macros/s/AKfycbzPyOEiCh3FT9tnUZ3Ov-7BD245uQDvjNzoFCSXwoni9YLIgQie4LnHXd4bVKg3T7I8Gg/exec">
 
                 <div class="row g-3">
-                  <h4 class="mb-1">Kids Hoodies</h4>
+                  <h4 class="mb-1">Kids Hoodies <a href="https://photos.app.goo.gl/Ya6USJKwywYGb83d6" target="_blank" style="font-size:14px;">(sizing chart)</a></h4>
                   {% for swag in 88_swag_loop %}
                     <div class="col-6 col-sm-3">
                       <div class="image-box">
@@ -134,14 +137,14 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                             <option value="5_kids_{{swag.title}}_hoodie">5</option>
                             <option value="6_kids_{{swag.title}}_hoodie">6</option>
                         </select>
-                        <input type="hidden" id="kids_{{swag.title}}_hoodie_cost" name="kids_{{swag.title}}_hoodie_cost" value="35" />
+                        <input type="hidden" id="kids_{{swag.title}}_hoodie_cost"  value="35" />
                         <div class="result">Result: $<span id="kids_{{swag.title}}_hoodie_result">0</span></div>
                       </div>
                     </div>
                   {% endfor %}
 
 
-                  <h4 class="mb-1 mt-5">Adult Hoodies</h4>
+                  <h4 class="mb-1 mt-5">Adult Hoodies <a href="https://photos.app.goo.gl/Ya6USJKwywYGb83d6" target="_blank" style="font-size:14px;">(sizing chart)</a></h4>
 
 
                   {% for swag in 88_swag_loop %}
@@ -163,14 +166,14 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                             <option value="5_adult_{{swag.title}}_hoodie">5</option>
                             <option value="6_adult_{{swag.title}}_hoodie">6</option>
                         </select>
-                        <input type="hidden" id="adults_{{swag.title}}_hoodie_cost" name="adults_{{swag.title}}_hoodie_cost" value="35" />
+                        <input type="hidden" id="adults_{{swag.title}}_hoodie_cost" value="35" />
                         <div class="result">Result: $<span id="adults_{{swag.title}}_hoodie_result">0</span></div>
                       </div>
                     </div>
                   {% endfor %}
 
 
-                  <h4 class="mb-1 mt-5">Kids T-Shirt</h4>
+                  <h4 class="mb-1 mt-5">Kids T-Shirt <a href="https://photos.app.goo.gl/Ya6USJKwywYGb83d6" target="_blank" style="font-size:14px;">(sizing chart)</a></h4>
                   {% for swag in 88_swag_loop %}
                     <div class="col-6 col-sm-3">
                       <div class="image-box">
@@ -190,14 +193,14 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                             <option value="5_kids_{{swag.title}}_tshirt">5</option>
                             <option value="6_kids_{{swag.title}}_tshirt">6</option>
                         </select>
-                        <input type="hidden" id="kids_{{swag.title}}_tshirt_cost" name="kids_{{swag.title}}_tshirt_cost" value="25" />
+                        <input type="hidden" id="kids_{{swag.title}}_tshirt_cost" value="25" />
                         <div class="result">Result: $<span id="kids_{{swag.title}}_tshirt_result">0</span></div>
                       </div>
                     </div>
                   {% endfor %}
 
 
-                  <h4 class="mb-1 mt-5">Adult T-Shirt</h4>
+                  <h4 class="mb-1 mt-5">Adult T-Shirt <a href="https://photos.app.goo.gl/Ya6USJKwywYGb83d6" target="_blank" style="font-size:14px;">(sizing chart)</a></h4>
 
                   {% for swag in 88_swag_loop %}
                     <div class="col-6 col-sm-3">
@@ -218,7 +221,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                             <option value="5_adults_{{swag.title}}_tshirt">5</option>
                             <option value="6_adults_{{swag.title}}_tshirt">6</option>
                         </select>
-                        <input type="hidden" id="adults_{{swag.title}}_tshirt_cost" name="adults_{{swag.title}}_tshirt_cost" value="25" />
+                        <input type="hidden" id="adults_{{swag.title}}_tshirt_cost" value="25" />
                         <div class="result">Result: $<span id="adults_{{swag.title}}_tshirt_result">0</span></div>
                       </div>
                     </div>
@@ -244,7 +247,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                                 <option value="5_{{swag.title}}">5</option>
                                 <option value="6_{{swag.title}}">6</option>
                             </select>
-                            <input type="hidden" id="{{swag.title}}_cost" name="{{swag.title}}_cost" value="{{swag.price}}" />
+                            <input type="hidden" id="{{swag.title}}_cost" value="{{swag.price}}" />
                             <div class="result">Result: $<span id="{{swag.title}}_result">0</span></div>
                       </div>
                     </div>
@@ -254,14 +257,14 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                   <h4 class="mb-1 mt-5">Your Information</h4>
                   <div class="col-sm-6">
                     <label for="firstName" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <input name="firstName" type="text" class="form-control" id="firstName" required minlength="3">
                     <div class="invalid-feedback">
                       Valid first name is required.
                     </div>
                   </div>
                     <div class="col-sm-6">
                       <label for="lastName" class="form-label">Last name</label>
-                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                      <input name="lastName" type="text" class="form-control" id="lastName" required minlength="3">
                       <div class="invalid-feedback">
                         Valid last name is required.
                       </div>
@@ -269,7 +272,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
         
                     <div class="col-6">
                       <label for="scout" class="form-label">Scout's name</label>
-                      <input type="text" class="form-control" id="scout" placeholder="" required="">
+                      <input name="scout" type="text" class="form-control" id="scout" required minlength="3">
                       <div class="invalid-feedback">
                           Your scout is required.
                         </div>
@@ -277,7 +280,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
         
                     <div class="col-12">
                       <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
-                      <input type="email" class="form-control" id="email" placeholder="">
+                      <input name="email" type="email" class="form-control" id="email" >
                       <div class="invalid-feedback">
                         Please enter a valid email address.
                       </div>
@@ -285,7 +288,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
         
                     <div class="col-12">
                       <label for="address" class="form-label">Address</label>
-                      <input type="text" class="form-control" id="address" placeholder="" required="">
+                      <input name="address" type="text" class="form-control" id="address" required minlength="3">
                       <div class="invalid-feedback">
                         Please enter your shipping address.
                       </div>
@@ -293,7 +296,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
         
                     <div class="col-12">
                       <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
-                      <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                      <input name="address2" type="text" class="form-control" id="address2" >
                     </div>
         
                     <!-- <div class="col-md-5">
@@ -320,7 +323,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
          -->
                     <div class="col-md-3">
                       <label for="zip" class="form-label">Zip</label>
-                      <input type="text" class="form-control" id="zip" placeholder="" required="">
+                      <input name="zip" type="text" class="form-control" id="zip" required minlength="3">
                       <div class="invalid-feedback">
                         Zip code required.
                       </div>
@@ -344,7 +347,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
       
                 
                 <h4 class="mb-3 mt-5"><div id="totalResult"><strong>Your Total: $<span id="overallResult">0</span></strong></div></h4>
-                <input type="hidden" id="overallHidden" name="overallHidden" value="0" />
+                <input type="hidden" id="overallHidden" name="total" value="0" />
                 <p>Please make payment via Venmo to <strong><a target="_blank" href="https://venmo.com/u/Lori-Sussman-2">@Lori-Sussman-2</a></strong>.</br />
                   2023 Order Deadline: <strong>Mon - 12/4/2023</strong>.</br />
                   Estimated date of delivery: <strong>Wed - 12/20/2023</strong>.</p>
