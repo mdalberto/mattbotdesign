@@ -4,7 +4,78 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
+const icon = document.querySelector('.icon');
+const gears = document.getElementById('gears');
+var animation = lottie.loadAnimation({
+  container: icon,
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: 'assets/img/close-lottie.json'
+
+});
+
+var gearsAnimation = lottie.loadAnimation({
+  container: gears,
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: 'assets/img/prod.json'
+
+});
+
+
+
+
+let player = document.getElementById("gears");
+
+player.addEventListener("ready", () => {
+  LottieInteractivity.create({
+        mode:"scroll",
+        player: "#gears",
+        actions: [
+        {
+            visibility:[0, 1.0],
+            type: "seek",
+            frames: [0, 300],
+        },
+        ]
+      });
+});
+
+
+// icon.addEventListener('mouseclick', () => {
+//   console.log('hi');
+//   lottie.setDirection('-1');
+// });
+
+// When toggle button pressed, run toggleNav function
+icon.addEventListener('click', toggleNav);
+var state = 'play';
+function toggleNav() {
+  console.log('hi');        
+  animation.goToAndStop(7, true);
+
+  if(state === 'play') {
+    animation.play();
+    animation.setDirection(1);
+    state = 'pause';
+  } else {
+    //animation.goToAndStop(0, true);
+    animation.setDirection(-1);
+    //animation.goToAndStop(-1);
+    animation.play();
+    state = 'play';
+  }
+
+}
+
 (function() {
+
+
+
     "use strict";
   
     /**

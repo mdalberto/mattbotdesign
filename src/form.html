@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oreland Pack 88 - Class B order form</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="/images/favicon/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
     <script src="
 https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js
 "></script>
@@ -63,7 +80,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
     <div class="container">
         <main>
           <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="/images/logo.jpg" alt="" width="100" height="100">
+            <img class="d-block mx-auto mb-4" src="/images/logo.png" alt="" width="100" height="100">
             <h2>Pack 88 Class B Order Form</h2>
             <p class="lead">'Class B' shirts/sweatshirts are cub scout uniforms that are worn at causal Pack events and outings.
             </p>
@@ -122,7 +139,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                     <div class="col-6 col-sm-3">
                       <div class="image-box">
                         <img src="/images/hoodie-{{swag.id}}.jpg" onClick="toggleCheck(this);" />
-                        <div class="price">$35</div>
+                        <div class="price">$30</div>
                         <div class="mt-2">
                             <!-- <input id="{{swag.id}}_kids_{{swag.title}}_hoodie" type="checkbox" name="{{swag.id}}_kids_{{swag.title}}_hoodie" value="{{swag.id}}_kids_{{swag.title}}_hoodie" class="form-check-input"> -->
                             <label class="mb-2">{{swag.title}} Hoodie (kids)</label>
@@ -137,7 +154,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                             <option value="5_kids_{{swag.title}}_hoodie">5</option>
                             <option value="6_kids_{{swag.title}}_hoodie">6</option>
                         </select>
-                        <input type="hidden" id="kids_{{swag.title}}_hoodie_cost"  value="35" />
+                        <input type="hidden" id="kids_{{swag.title}}_hoodie_cost"  value="30" />
                         <div class="result">Result: $<span id="kids_{{swag.title}}_hoodie_result">0</span></div>
                       </div>
                     </div>
@@ -151,7 +168,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                     <div class="col-6 col-sm-3">
                       <div class="image-box">
                         <img src="/images/hoodie-{{swag.id}}.jpg" onClick="toggleCheck(this);" />
-                        <div class="price">$35</div>
+                        <div class="price">$30</div>
                         <div class="mt-2">
                             <!-- <input id="{{swag.id}}_adults_{{swag.id}}_hoodie" type="checkbox" name="{{swag.id}}_adults_{{swag.id}}_hoodie" value="{{swag.id}}_adults_{{swag.id}}_hoodie" class="form-check-input"> -->
                             <label class="mb-2">{{swag.title}} Hoodie (Adults)</label>
@@ -166,7 +183,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                             <option value="5_adult_{{swag.title}}_hoodie">5</option>
                             <option value="6_adult_{{swag.title}}_hoodie">6</option>
                         </select>
-                        <input type="hidden" id="adults_{{swag.title}}_hoodie_cost" value="35" />
+                        <input type="hidden" id="adults_{{swag.title}}_hoodie_cost" value="30" />
                         <div class="result">Result: $<span id="adults_{{swag.title}}_hoodie_result">0</span></div>
                       </div>
                     </div>
@@ -178,7 +195,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                     <div class="col-6 col-sm-3">
                       <div class="image-box">
                         <img src="/images/shirt-{{swag.id}}.jpg" onClick="toggleCheck(this);" />
-                        <div class="price">$25</div>
+                        <div class="price">$20</div>
                         <div class="mt-2">
                             <!-- <input id="{{swag.id}}" type="checkbox" name="{{swag.id}}" value="{{swag.id}}" class="form-check-input"> -->
                             <label class="mb-2">{{swag.title}} T-Shirt (kids)</label>
@@ -193,7 +210,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                             <option value="5_kids_{{swag.title}}_tshirt">5</option>
                             <option value="6_kids_{{swag.title}}_tshirt">6</option>
                         </select>
-                        <input type="hidden" id="kids_{{swag.title}}_tshirt_cost" value="25" />
+                        <input type="hidden" id="kids_{{swag.title}}_tshirt_cost" value="20" />
                         <div class="result">Result: $<span id="kids_{{swag.title}}_tshirt_result">0</span></div>
                       </div>
                     </div>
@@ -206,7 +223,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                     <div class="col-6 col-sm-3">
                       <div class="image-box">
                         <img src="/images/shirt-{{swag.id}}.jpg" onClick="toggleCheck(this);" />
-                        <div class="price">$25</div>
+                        <div class="price">$20</div>
                         <div class="mt-2">
                             <!-- <input id="{{swag.id}}" type="checkbox" name="{{swag.id}}" value="{{swag.id}}" class="form-check-input"> -->
                             <label class="mb-2">{{swag.title}} T-Shirt (Adults)</label>
@@ -221,7 +238,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
                             <option value="5_adults_{{swag.title}}_tshirt">5</option>
                             <option value="6_adults_{{swag.title}}_tshirt">6</option>
                         </select>
-                        <input type="hidden" id="adults_{{swag.title}}_tshirt_cost" value="25" />
+                        <input type="hidden" id="adults_{{swag.title}}_tshirt_cost" value="20" />
                         <div class="result">Result: $<span id="adults_{{swag.title}}_tshirt_result">0</span></div>
                       </div>
                     </div>

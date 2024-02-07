@@ -36,32 +36,40 @@
     <link href="/css/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="/css/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
    -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
     <!-- Template Main CSS File -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/styles-min.css" />
 </head>
 <body>
-    
+  <img src="assets/img/bgd.jpg" class="bgd-image2" />
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-center position-relative header-nav">
+    <div class="container d-flex align-items-center position-relative header-nav">
       <!-- <h1 class="logo me-auto"><a href="index.html">Mattbotdesign</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
 
       <nav id="navbar" class="navbar">
+        <!-- <a href="/" class="logo"><img src="assets/img/logo/logo.svg" alt="" class="img-fluid"> </a> -->
         <ul class="nav-group-left">
           <li><a class="nav-link scrollto {{ 'active' if currentPage == 'homepage' }}" href="/">Home</a></li>
           <li><a class="nav-link scrollto {{ 'active' if currentPage == 'athletes' }}" href="#work">Work</a></li>
           <li><a class="nav-link scrollto {{ 'active' if currentPage == 'services' }}" href="#services">Services</a></li>
         </ul>
-        <a href="/" class="logo"><img src="assets/img/logo/logo.svg" alt="" class="img-fluid"> </a>
-        <i class="bi bi-list mobile-nav-toggle"> </i>
+
+
+        <div class="icon mobile-nav-toggle"></div>
+
+        <!-- <i class="bi bi-list mobile-nav-toggle"> </i> -->
         <!-- <ul class="nav-group-right">
 
           <li><a class="nav-link scrollto {{ 'active' if currentPage == 'contact' }}" href="/contact-us">Contact Us</a></li>
           <li><a class="nav-link scrollto {{ 'active' if currentPage == 'about' }}" href="/about-us">About Us</a></li>
         </ul> -->
         <ul class="nav-number"><li>
-          <button style="cursor:pointer;" onclick="location.href='tel:2672106381';" type="button" class="btn btn-primary">
+          <button style="cursor:pointer;" onclick="location.href='tel:2672106381';" type="button" class="btn btn-secondary">
             <span class="icon-circle"><i class="bi bi-telephone-fill"></i></span> 267 210 6381
         </button></li></ul>
 
@@ -80,10 +88,10 @@
     <div class="container position-relative">
       <div class="row">
 
-        <div class="col-lg-3 col-md-6 footer-contact">
+        <!-- <div class="col-lg-3 col-md-6 footer-contact">
           <img src="assets/img/logo/logo.svg">
 
-        </div>
+        </div> -->
 
         <div class="col-lg-3 col-md-6 footer-links">
 
@@ -137,9 +145,16 @@
 <script src="assets/vendor/php-email-form/validate.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
+<script src="assets/vendor/bodymovin/lottie.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js" integrity="sha512-gze4ZSc3u6B23fISCPvJ+2stODz0DJ3MowbegfgoeYnuvLHh1jHLb1EAP/b8DD20n86AMDfukkEAz2ZhoMd1RA==" crossorigin="anonymous"></script> -->
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+
+<script>
+
+
+</script>
+
 <script>
   window.ga = function() {
       ga.q.push(arguments)

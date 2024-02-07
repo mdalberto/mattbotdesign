@@ -4,8 +4,16 @@
         "name": "Oreland Pack 88",
         "team": "orelandpack88.com",
         "image": "assets/img/work/orlandpack88-lg.jpg",
-		"imageSm": "assets/img/work/oreland-xs.png",
+		"imageSm": "assets/img/work/oreland-xs.jpg",
         "url": "https://orelandpack88.com/"
+    },
+    {
+        "id": "1",
+        "name": "Intuitive AI Advisors",
+        "team": "intuitiveaiadvisors.app",
+        "image": "assets/img/work/iaa.jpg",
+		"imageSm": "assets/img/work/iaa-xs.jpg",
+        "url": "https://intuitiveaiadvisors.app/"
     },
     {
         "id": "1",
