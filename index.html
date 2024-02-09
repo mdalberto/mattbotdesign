@@ -90,7 +90,7 @@
 
 
       <!-- Header -->
-      <section class="hero" id="hero">
+      <section class="hero overflow-visible" id="hero">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 d-md-flex align-items-center"  style="z-index:3">
@@ -98,21 +98,19 @@
                       <p class="text-big">Matthew Dalberto</p>
                         <h1 class="home-h1 mb-4">Creative Consultant</h1>
                         <p class="p-large mb-4 pb-2">Research, Design, Build. I offer a blend of user center design and technology expertise. My passion is to create useable, aesthetically-pleasing digital products, that are useful to people and grow business.</p>
-                        <a style="z-index:10;" class="btn-primary mb-5 mb-lg-0" href="https://apps.apple.com/us/app/psychic-cloud/id1583925318">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16" style="margin-top:-5px; margin-right:4px;">
-                          <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
-                          <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
-                        </svg> Download</a>
+                        <a style="z-index:10;" class="btn-primary mb-5 mb-lg-0" href="#work">
+                          View Work</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-8 text-center d-flex justify-content-center">1
+                <div class="col-lg-8 text-center d-flex justify-content-center position-relative gears-container">
+                  <!-- for dotlottie player?-->
+                  <!-- <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>  -->
+                    
+                  <!-- use for lottie animation control -->
+                  <!-- <lottie-player id="gears" src="https://lottie.host/742c18e2-1284-4378-92e9-3e06cbbbd4bc/xYVMYDqUUJ.json" background="transparent" style="width:100%"></lottie-player> -->
 
-                      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-                      <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@1.6.2/dist/lottie-interactivity.min.js" type="module"></script> 
-                          <dotlottie-player id="gears" src="https://lottie.host/742c18e2-1284-4378-92e9-3e06cbbbd4bc/xYVMYDqUUJ.json" background="transparent" style="width:100%"></dotlottie-player>
-   
+                  <lottie-player class="gears" id="gears" src="/assets/img/prod3.json" background="transparent" ></lottie-player>
 
-   <div id="gears"></div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -150,7 +148,7 @@
 
           
           
-            <div style="cursor:pointer;" onclick="window.open('https://orelandpack88.com/');" class="col-xl-3 col-md-3 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="window.open('https://orelandpack88.com/');" class="col-xl-3 col-md-3 col-sm-12 col-xs-6 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="assets/img/work/oreland-xs.jpg" /></div>
                 <!-- <h4>Oreland Pack 88</h4> -->
@@ -160,7 +158,7 @@
 
           
           
-            <div style="cursor:pointer;" onclick="window.open('https://intuitiveaiadvisors.app/');" class="col-xl-3 col-md-3 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="window.open('https://intuitiveaiadvisors.app/');" class="col-xl-3 col-md-3 col-sm-12 col-xs-6 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="assets/img/work/iaa-xs.jpg" /></div>
                 <!-- <h4>Intuitive AI Advisors</h4> -->
@@ -170,7 +168,7 @@
 
           
           
-            <div style="cursor:pointer;" onclick="window.open('https://buckleysports.com');" class="col-xl-3 col-md-3 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="window.open('https://buckleysports.com');" class="col-xl-3 col-md-3 col-sm-12 col-xs-6 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="assets/img/work/buckley-xs.jpg" /></div>
                 <!-- <h4>Buckley Sports Management</h4> -->
@@ -180,7 +178,7 @@
 
           
           
-            <div style="cursor:pointer;" onclick="window.open('https://www.figma.com/file/S3GL2h7d2oybZnl39yHGmb/Pentec-Health-Website?type=design&node-id=0%3A1&mode=design&t=mQsfaWWhmri4ZM8N-1');" class="col-xl-3 col-md-3 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="window.open('https://www.figma.com/file/S3GL2h7d2oybZnl39yHGmb/Pentec-Health-Website?type=design&node-id=0%3A1&mode=design&t=mQsfaWWhmri4ZM8N-1');" class="col-xl-3 col-md-3 col-sm-12 col-xs-6 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="assets/img/work/pentec-web-xs.jpg" /></div>
                 <!-- <h4>Pentec Health Web</h4> -->
@@ -190,7 +188,7 @@
 
           
           
-            <div style="cursor:pointer;" onclick="window.open('https://www.figma.com/proto/NWh5KMCrfadlBwTOumb42W/Pentec-Health---Specialty-Care-Portal?type=design&node-id=1112-7233&t=J0OpRZbZhGnydzLM-0&scaling=min-zoom&page-id=1112%3A3482&starting-point-node-id=1112%3A7233&show-proto-sidebar=1');" class="col-xl-3 col-md-3 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="window.open('https://www.figma.com/proto/NWh5KMCrfadlBwTOumb42W/Pentec-Health---Specialty-Care-Portal?type=design&node-id=1112-7233&t=J0OpRZbZhGnydzLM-0&scaling=min-zoom&page-id=1112%3A3482&starting-point-node-id=1112%3A7233&show-proto-sidebar=1');" class="col-xl-3 col-md-3 col-sm-12 col-xs-6 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="assets/img/work/pentec-portal-xs.jpg" /></div>
                 <!-- <h4>Pentec Health Portal</h4> -->
@@ -200,7 +198,7 @@
 
           
           
-            <div style="cursor:pointer;" onclick="window.open('https://www.psychicsource.com/energy-healing');" class="col-xl-3 col-md-3 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="window.open('https://www.psychicsource.com/energy-healing');" class="col-xl-3 col-md-3 col-sm-12 col-xs-6 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="assets/img/work/energy-healing-xs.jpg" /></div>
                 <!-- <h4>Energy Healing</h4> -->
@@ -210,7 +208,7 @@
 
           
           
-            <div style="cursor:pointer;" onclick="window.open('https://www.psychiccloud.app/');" class="col-xl-3 col-md-3 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="window.open('https://www.psychiccloud.app/');" class="col-xl-3 col-md-3 col-sm-12 col-xs-6 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="assets/img/work/psychic-cloud-xs.jpg" /></div>
                 <!-- <h4>Psychic Cloud</h4> -->
@@ -220,7 +218,7 @@
 
           
           
-            <div style="cursor:pointer;" onclick="window.open('https://apps.apple.com/us/app/psychicsource/id1099970139?ls=1');" class="col-xl-3 col-md-3 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="window.open('https://apps.apple.com/us/app/psychicsource/id1099970139?ls=1');" class="col-xl-3 col-md-3 col-sm-12 col-xs-6 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="assets/img/work/ps-app-xs.jpg" /></div>
                 <!-- <h4>Psychic Source</h4> -->
@@ -230,7 +228,7 @@
 
           
           
-            <div style="cursor:pointer;" onclick="window.open('https://apps.apple.com/us/app/pathforward-psychic/id1587762819?ls=1');" class="col-xl-3 col-md-3 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="window.open('https://apps.apple.com/us/app/pathforward-psychic/id1587762819?ls=1');" class="col-xl-3 col-md-3 col-sm-12 col-xs-6 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="assets/img/work/pf-app-xs.jpg" /></div>
                 <!-- <h4>Psychic Cloud</h4> -->
@@ -240,7 +238,7 @@
 
           
           
-            <div style="cursor:pointer;" onclick="window.open('https://apps.apple.com/us/app/pathforward-psychic/id1587762819?ls=1');" class="col-xl-3 col-md-3 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div style="cursor:pointer;" onclick="window.open('https://apps.apple.com/us/app/pathforward-psychic/id1587762819?ls=1');" class="col-xl-3 col-md-3 col-sm-12 col-xs-6 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><img src="assets/img/work/fp-xs.jpg" /></div>
                 <!-- <h4>Psychic Cloud</h4> -->
@@ -484,7 +482,70 @@
 <script src="assets/vendor/php-email-form/validate.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/bodymovin/lottie.js"></script>
+
+
+
+
+<script src="assets/vendor/bodymovin/lottie.js"></script><!-- makes the top nav work -->
+<script type="text/javascript">
+  const icon = document.querySelector('.icon');
+  const gears = document.getElementById('gears');
+  var animation = lottie.loadAnimation({
+    container: icon,
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'assets/img/close-lottie.json'
+
+  });
+
+// When toggle button pressed, run toggleNav function
+icon.addEventListener('click', toggleNav);
+var state = 'play';
+function toggleNav() {
+  console.log('hi');        
+  animation.goToAndStop(7, true);
+
+  if(state === 'play') {
+    animation.play();
+    animation.setDirection(1);
+    state = 'pause';
+  } else {
+    //animation.goToAndStop(0, true);
+    animation.setDirection(-1);
+    //animation.goToAndStop(-1);
+    animation.play();
+    state = 'play';
+  }
+
+}
+</script>
+
+
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+<script type="text/javascript">
+
+  LottieInteractivity.create({
+    player: '#gears',
+    mode: 'scroll',
+    actions: [
+      {
+        visibility: [.5,1],
+        type: 'seek',
+        frames: [0, 360],
+      },
+    ]
+  });
+
+
+</script>
+
+
+
+
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js" integrity="sha512-gze4ZSc3u6B23fISCPvJ+2stODz0DJ3MowbegfgoeYnuvLHh1jHLb1EAP/b8DD20n86AMDfukkEAz2ZhoMd1RA==" crossorigin="anonymous"></script> -->
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
@@ -494,7 +555,7 @@
 
 </script>
 
-<script>
+<script type="text/javascript">
   window.ga = function() {
       ga.q.push(arguments)
   };
