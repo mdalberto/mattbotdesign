@@ -145,7 +145,70 @@
 <script src="assets/vendor/php-email-form/validate.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/bodymovin/lottie.js"></script>
+
+
+
+
+<script src="assets/vendor/bodymovin/lottie.js"></script><!-- makes the top nav work -->
+<script type="text/javascript">
+  const icon = document.querySelector('.icon');
+  const gears = document.getElementById('gears');
+  var animation = lottie.loadAnimation({
+    container: icon,
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'assets/img/close-lottie.json'
+
+  });
+
+// When toggle button pressed, run toggleNav function
+icon.addEventListener('click', toggleNav);
+var state = 'play';
+function toggleNav() {
+  console.log('hi');        
+  animation.goToAndStop(7, true);
+
+  if(state === 'play') {
+    animation.play();
+    animation.setDirection(1);
+    state = 'pause';
+  } else {
+    //animation.goToAndStop(0, true);
+    animation.setDirection(-1);
+    //animation.goToAndStop(-1);
+    animation.play();
+    state = 'play';
+  }
+
+}
+</script>
+
+
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+<script type="text/javascript">
+
+  LottieInteractivity.create({
+    player: '#gears',
+    mode: 'scroll',
+    actions: [
+      {
+        visibility: [.5,1],
+        type: 'seek',
+        frames: [0, 360],
+      },
+    ]
+  });
+
+
+</script>
+
+
+
+
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js" integrity="sha512-gze4ZSc3u6B23fISCPvJ+2stODz0DJ3MowbegfgoeYnuvLHh1jHLb1EAP/b8DD20n86AMDfukkEAz2ZhoMd1RA==" crossorigin="anonymous"></script> -->
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
@@ -155,7 +218,7 @@
 
 </script>
 
-<script>
+<script type="text/javascript">
   window.ga = function() {
       ga.q.push(arguments)
   };

@@ -17,9 +17,8 @@ FCFDDB // yellow
 
 :root {
     --primary: #4e3445;
-    --primary-shade-20: #49B1E2;
-    --secondary: #49B1E2;
-    --terchiary: #49B1E2;
+    --primary-shade-20: #f9ae8c;
+    --secondary: #f9ae8c;
     --primary-tint-20: #DBEFF9;
     --terchiary: #1c2839;
   }
@@ -79,23 +78,18 @@ FCFDDB // yellow
     color:var(--primary) !important;
   }
   
-  .text-big{
-  font-size: 20px;
-  }
-  
-
   
   .btn:hover{
     cursor:pointer;
   }
-
 
   .text-primary{
     color:var(--primary) !important;
   }
   
   .text-big{
-  font-size: 20px;
+  font-size: 28px;
+  margin-bottom:.75rem;
   }
   
   .btn-link{
@@ -640,6 +634,7 @@ FCFDDB // yellow
   
     color:white;
     font-size:60px;
+    line-height: 54px;
   }
   
   .hero-details{
@@ -648,11 +643,11 @@ FCFDDB // yellow
     justify-content: space-between;
   }
   
-  @media (min-width: 768px) {
-    .home-h1{
+  // @media (min-width: 768px) {
+  //   .home-h1{
 
-    }
-  }
+  //   }
+  // }
   
   
   @-webkit-keyframes up-down {
@@ -726,7 +721,33 @@ FCFDDB // yellow
     max-width:790px;
     margin:0 auto;
   }
+
+  .gears{
+
+    position: absolute;
+    top: -400px;
+    left: -200px;
+    z-index: 0;
+    width:1200px;
+    height:1200px;
+  }
   
+  @media (max-width: 768px) {
+
+    .gears-container{
+      height:300px;
+    }
+    .gears  {
+     // position: relative;
+     ////// height:300px;
+//width:800px;
+left: auto;
+    top: -200px;    z-index: 0;
+    width: 800px;
+    height: 800px;
+    }
+  }
+
   /*--------------------------------------------------------------
   # Cliens
   --------------------------------------------------------------*/
