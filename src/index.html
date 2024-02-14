@@ -32,7 +32,7 @@ currentPage: homepage
                   <!-- use for lottie animation control -->
                   <!-- <lottie-player id="gears" src="https://lottie.host/742c18e2-1284-4378-92e9-3e06cbbbd4bc/xYVMYDqUUJ.json" background="transparent" style="width:100%"></lottie-player> -->
 
-                  <lottie-player class="gears" id="gears" src="/assets/img/prod3.json" background="transparent" ></lottie-player>
+                  <lottie-player class="gears" id="gears" src="assets/img/prod3.json" background="transparent" ></lottie-player>
 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -64,7 +64,16 @@ currentPage: homepage
 
         <div class="section-title " style="max-width:800px; margin-left:auto; margin-right: auto;">
           <h2>Work</h2>
-          <p>These projects are repersentives of the range of digital product types that has been worked on. For each one, stakeholder/customer requirements and goals were reviewed and from this, production of the user interface experience was completed. Types of activities/work completed: wireframing, mockups, prototypes, hi-fi designs. Appling the visual design and design system to the exeperience. In some cases re-branding. Also in some, frontend work was completed which includes using the given code architecutre to complete html/css and javascript. They product types range from marketing single page sites to deep feature rich console application, to mobile applications.</p>
+          <p>These projects are repersentives of the range of digital product types that has been worked on. For each one, stakeholder/customer requirements and goals were reviewed and from this, production of the user interface experience was completed. </p>Types of activities/work completed: 
+          <ul><li>wireframing</li>
+            <li>mockups</li>
+            <li>prototypes</li>
+            <li>hi-fi designs</li>
+            <li>Appling and/or creating a design system</li>
+            <li>In some cases rebranding</li>
+            <li>In some cases frontend coding</li>
+          </ul>
+          Types of applications range from responsive webpages, to console applications, to mobile applications.</p>
         </div>
 
         <div class="row justify-content-center ">
@@ -94,7 +103,7 @@ currentPage: homepage
 
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!-- <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title" style="max-width:800px; margin-left:auto; margin-right: auto;">
@@ -105,12 +114,12 @@ currentPage: homepage
         <div class="row justify-content-center mr-0 ml-0 ">
 
           {% for service in services %}
-          <div  style="cursor:auto" class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6 d-flex mt-4 mt-md-0 mb-md-5  text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+          <div  style="cursor:auto" class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6 d-flex mt-4 mt-md-0 mb-md-5  text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200"> -->
 
             <!-- <div  style="cursor:pointer;"  onclick="location.href='{{global.baseUrl}}services#{{service.id}}';" class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6 d-flex mt-4 mt-md-0 mb-md-5  text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200"> -->
-              <div class="icon-box d-flex justify-content-center align-items-center">
+              <!-- <div class="icon-box d-flex justify-content-center align-items-center"> -->
                 <!-- <div class="icon"><img src="{{service.image}}" /></div> -->
-                <h4>{{service.title}}</h4>
+                <!-- <h4>{{service.title}}</h4>
               </div>
             </div>
 
@@ -120,7 +129,7 @@ currentPage: homepage
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>End Services Section -->
 
 
 
@@ -159,34 +168,58 @@ currentPage: homepage
   
     <!-- End Team Section -->
 
+
+
+
+
     <!-- <div class="container aos-init aos-animate" data-aos="fade-up"><hr /></div> -->
+    <div class="container aos-init aos-animate" data-aos="fade-up"><hr /></div>
+    {% for callouts in callouts %}
+      <!-- Header -->
+      <section class="hero overflow-visible">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-md-flex align-items-center"  style="z-index:3">
+                    <div>
+                        <h3>{{callouts.title}}</h3>
+                        {{callouts.content | safe }}
+                        <!-- <a style="z-index:10;" class="btn-primary mb-5 mb-lg-0" href="#work">View Work</a> -->
+                    </div> 
+                </div> 
+                <div class="col-lg-8 text-center d-flex justify-content-center position-relative ">
+                  <img src="{{callouts.image}}" style="width:100%"/>
+                </div> 
+            </div> 
+        </div>
+      </section> 
+      <!-- end of header -->
+      {% endfor %}
+
+
+
 
       <!-- ======= Scouting Section ======= -->
-      <section id="scouting" class="scouting">
+      <!-- <section id="scouting" class="scouting">
         <div class="container width-max-xs" data-aos="fade-up" style="max-width:800px">
-  
           <div class="section-title ">
-            <h2>Research, Design, Code</h2>
-          <p>Mattbotdesign offers a blend of UCD and technology expertise. Our passion is to create useable, aesthetically-pleasing solutions, that allow for users to get tasks done with least amount of effort possible, while balancing business goals. Benefits that are brought to any company are the ability to take a project from start to finish, exceeding client expectations, and finding new and innovative ways of solving challenges.
-          </p><p>
-            <strong>Front-End Development Tools and Skills (currently using): </strong><br/>
-            HTML/CSS, 11ty, Angular, ionic, Visual Studio & VS Code, Wordpress, .NET MVC, Git/Github, SASS, Bootstrap
-            </p>
-            <p>
-              <strong>Interaction Design and Visual design tools:</strong><br/>
-            Figma, Photoshop & Illustrator, Adobe XD
-            </p><p>
-              <strong>User Testing: </strong><br/>
-            Optimizely, Trymyui
-            </p><p>
-              <strong>Methodologies: </strong><br/>
-            User Center Design, Lean UX, Agile and Scrum software development, Lean Startup</p>
+            <h3>UI & Flow Specs</h3>
+            <img src="assets/img/work/flow.jpg" style="width:100%"/>
+            <br /><br/>
+            <h3>Design Systems</h3>
+            <img src="assets/img/work/designsystem.jpg" style="width:100%"/>
+            <br /><br/>
+            <h3>Logo Design</h3>
+            <img src="assets/img/work/logos.jpg" style="width:100%"/>
+            <br /><br/>
+            <h3>Optimization Workshops</h3>
+            <img src="assets/img/work/collab.jpg" style="width:100%"/>
           </div>
-  
-          
-
         </div>
-      </section>
+      </section> -->
 
-  </main><!-- End #main -->
+
+
+
+
+  </main>
 

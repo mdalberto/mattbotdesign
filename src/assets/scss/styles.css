@@ -95,6 +95,7 @@ h6 {
 /* Global stuff */
 .nav-spacer {
   padding-top: 120px;
+  overflow-x: hidden;
 }
 
 .text-primary {
@@ -789,7 +790,6 @@ section {
 .services {
   background-color: var(--primary);
   color: white;
-  background-image: url("../img/shape.svg");
   background-position: -2000px center;
   background-repeat: no-repeat;
 }

@@ -1,12 +1,11 @@
-[
-    {
-        "id": "1",
-        "name": "Oreland Pack 88",
-        "team": "orelandpack88.com",
-        "image": "assets/img/work/orlandpack88-lg.jpg",
-		"imageSm": "assets/img/work/oreland-xs.jpg",
-        "url": "https://orelandpack88.com/"
-    },
+[    {
+    "id": "1",
+    "name": "Energy Healing",
+    "team": " --- ",
+    "image": "assets/img/work/energy-healing-xs.jpg",
+    "imageSm": "assets/img/work/energy-healing-xs.jpg",
+    "url": "https://www.psychicsource.com/energy-healing"
+},
     {
         "id": "1",
         "name": "Intuitive AI Advisors",
@@ -14,6 +13,14 @@
         "image": "assets/img/work/iaa.jpg",
 		"imageSm": "assets/img/work/iaa-xs.jpg",
         "url": "https://intuitiveaiadvisors.app/"
+    },
+    {
+        "id": "1",
+        "name": "OE",
+        "team": " --- ",
+        "image": "assets/img/work/oe-xs.jpg",
+		"imageSm": "assets/img/work/oe-xs.jpg",
+        "url": "assets/img/work/oe.jpg"
     },
     {
         "id": "1",
@@ -25,6 +32,14 @@
     },
     {
         "id": "1",
+        "name": "Dolyestown Fresh",
+        "team": " --- ",
+        "image": "assets/img/work/dfresh.jpg",
+		"imageSm": "assets/img/work/dfresh-xs.jpg",
+        "url": "assets/img/work/doylestownfresh.jpg"
+    },
+    {
+        "id": "1",
         "name": "Pentec Health Web",
         "team": " --- ",
         "image": "assets/img/work/pentec-web-lg.jpg",
@@ -33,19 +48,19 @@
     },
     {
         "id": "1",
+        "name": "Oreland Pack 88",
+        "team": "orelandpack88.com",
+        "image": "assets/img/work/orlandpack88-lg.jpg",
+		"imageSm": "assets/img/work/oreland-xs.jpg",
+        "url": "https://orelandpack88.com/"
+    },
+    {
+        "id": "1",
         "name": "Pentec Health Portal",
         "team": " --- ",
         "image": "assets/img/work/pentec-portal-xs.jpg",
 		"imageSm": "assets/img/work/pentec-portal-xs.jpg",
         "url": "https://www.figma.com/proto/NWh5KMCrfadlBwTOumb42W/Pentec-Health---Specialty-Care-Portal?type=design&node-id=1112-7233&t=J0OpRZbZhGnydzLM-0&scaling=min-zoom&page-id=1112%3A3482&starting-point-node-id=1112%3A7233&show-proto-sidebar=1"
-    },
-    {
-        "id": "1",
-        "name": "Energy Healing",
-        "team": " --- ",
-        "image": "assets/img/work/energy-healing-xs.jpg",
-		"imageSm": "assets/img/work/energy-healing-xs.jpg",
-        "url": "https://www.psychicsource.com/energy-healing"
     },
     {
         "id": "1",
@@ -69,14 +84,6 @@
         "team": " --- ",
         "image": "assets/img/work/pf-app-xs.jpg",
 		"imageSm": "assets/img/work/pf-app-xs.jpg",
-        "url": "https://apps.apple.com/us/app/pathforward-psychic/id1587762819?ls=1"
-    },
-    {
-        "id": "1",
-        "name": "Psychic Cloud",
-        "team": " --- ",
-        "image": "assets/img/work/fp-xs.jpg",
-		"imageSm": "assets/img/work/fp-xs.jpg",
         "url": "https://apps.apple.com/us/app/pathforward-psychic/id1587762819?ls=1"
     }
 ]

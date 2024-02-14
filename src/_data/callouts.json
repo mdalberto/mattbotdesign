@@ -1,0 +1,21 @@
+[    
+    {
+    "id": "1",
+    "title": "UI & Prototype Specs",
+    "image": "assets/img/work/ui.jpg",
+    "content": "<p class='p-large mb-4 pb-2'>Hundreds (maybe over a thousand?) of diagrams, mockups, and wireframes have been produced to guide developers in coding the interactive elements needed for users to progress through various tasks and funnels.</p>"
+    },
+    {
+        "id": "2",
+        "title": "Optimization Experiments",
+        "content": "<p class='p-large mb-4 pb-2'>Are the graphics working? Is the copy being understood? How likely is the user able to understand and complete what they want to complete on your website/app? These questions get answered through user testing. See Optimization Ideation sessions where developers, designers, steakeholders all get together to generate ideas to guide A/B/C testing.</p>",
+        "image": "assets/img/work/collab.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Design & Branding",
+        "image": "assets/img/work/branding.jpg",
+		"content": "<p class='p-large mb-4 pb-2'>Has AI conquered image generation? Yes, yes it has... designers can harness this to make those great AI visuals relevant, specific and standard to a particular business's visual branding and commuincation goals.</p>"
+    }
+]
+

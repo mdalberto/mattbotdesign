@@ -72,6 +72,7 @@ FCFDDB // yellow
   
   .nav-spacer{
     padding-top: 120px;
+    overflow-x: hidden;
   }
   
   .text-primary{
@@ -844,7 +845,7 @@ left: auto;
   .services{
     background-color: var(--primary);
     color:white;
-    background-image: url("../img/shape.svg");
+    //background-image: url("../img/shape.svg");
     background-position: -2000px center;
     background-repeat: no-repeat;
   }
