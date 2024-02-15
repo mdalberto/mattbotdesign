@@ -191,7 +191,13 @@ function toggleNav() {
 
 <script type="text/javascript">
 
-  LottieInteractivity.create({
+
+// Detect the device
+let userAgent = navigator.userAgent;
+
+if (/Mobi|Android/i.test(userAgent)) {
+    // If the user agent is a mobile device
+    LottieInteractivity.create({
     player: '#gears',
     mode: 'scroll',
     actions: [
@@ -202,6 +208,21 @@ function toggleNav() {
       },
     ]
   });
+} else {
+    // If the user agent is a Desktop
+    LottieInteractivity.create({
+    player: '#gears',
+    mode: 'scroll',
+    actions: [
+      {
+        visibility: [1,1],
+        type: 'seek',
+        frames: [0, 360],
+      },
+    ]
+  });
+}
+
 
 
 </script>
