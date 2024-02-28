@@ -108,8 +108,9 @@
                     
                   <!-- use for lottie animation control -->
                   <!-- <lottie-player id="gears" src="https://lottie.host/742c18e2-1284-4378-92e9-3e06cbbbd4bc/xYVMYDqUUJ.json" background="transparent" style="width:100%"></lottie-player> -->
+                  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                  <lottie-player class="gears" id="gears" src="assets/img/prod3.json" background="transparent" background="transparent" speed="1"  direction="1" mode="normal" loop autoplay></lottie-player>
 
-                  <lottie-player class="gears" id="gears" src="assets/img/prod3.json" background="transparent" ></lottie-player>
 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -627,35 +628,36 @@ function toggleNav() {
 
 
 // Detect the device
-let userAgent = navigator.userAgent;
+// let userAgent = navigator.userAgent;
 
-if (/Mobi|Android/i.test(userAgent)) {
-    // If the user agent is a mobile device
-    LottieInteractivity.create({
-    player: '#gears',
-    mode: 'scroll',
-    actions: [
-      {
-        visibility: [.5,1],
-        type: 'seek',
-        frames: [0, 360],
-      },
-    ]
-  });
-} else {
-    // If the user agent is a Desktop
-    LottieInteractivity.create({
-    player: '#gears',
-    mode: 'scroll',
-    actions: [
-      {
-        visibility: [1,1],
-        type: 'seek',
-        frames: [0, 360],
-      },
-    ]
-  });
-}
+// if (/Mobi|Android/i.test(userAgent)) {
+//     // If the user agent is a mobile device
+//     LottieInteractivity.create({
+//     player: '#gears',
+//     mode: 'scroll',
+//     actions: [
+//       {
+//         visibility: [.5,1],
+//         type: 'seek',
+//         frames: [0, 360],
+//       },
+//     ]
+//   });
+// } else {
+//     // If the user agent is a Desktop
+//     LottieInteractivity.create({
+//     player: '#gears',
+//     mode: 'scroll',
+//     actions: [
+//       {
+//         visibility: [0,1],
+//         type: 'seek',
+//         frames: [0, 360],
+
+//       },
+//     ]
+//   });
+// }
 
 
 
