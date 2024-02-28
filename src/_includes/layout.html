@@ -193,35 +193,36 @@ function toggleNav() {
 
 
 // Detect the device
-let userAgent = navigator.userAgent;
+// let userAgent = navigator.userAgent;
 
-if (/Mobi|Android/i.test(userAgent)) {
-    // If the user agent is a mobile device
-    LottieInteractivity.create({
-    player: '#gears',
-    mode: 'scroll',
-    actions: [
-      {
-        visibility: [.5,1],
-        type: 'seek',
-        frames: [0, 360],
-      },
-    ]
-  });
-} else {
-    // If the user agent is a Desktop
-    LottieInteractivity.create({
-    player: '#gears',
-    mode: 'scroll',
-    actions: [
-      {
-        visibility: [1,1],
-        type: 'seek',
-        frames: [0, 360],
-      },
-    ]
-  });
-}
+// if (/Mobi|Android/i.test(userAgent)) {
+//     // If the user agent is a mobile device
+//     LottieInteractivity.create({
+//     player: '#gears',
+//     mode: 'scroll',
+//     actions: [
+//       {
+//         visibility: [.5,1],
+//         type: 'seek',
+//         frames: [0, 360],
+//       },
+//     ]
+//   });
+// } else {
+//     // If the user agent is a Desktop
+//     LottieInteractivity.create({
+//     player: '#gears',
+//     mode: 'scroll',
+//     actions: [
+//       {
+//         visibility: [0,1],
+//         type: 'seek',
+//         frames: [0, 360],
+
+//       },
+//     ]
+//   });
+// }
 
 
 
