@@ -40,11 +40,27 @@
     },
     {
         "id": "1",
+        "name": "Pentec Health Web",
+        "team": " --- ",
+        "image": "assets/img/work/pentec-web-lg.jpg",
+		"imageSm": "assets/img/work/pentec-web-xs.jpg",
+        "url": "https://www.figma.com/proto/S3GL2h7d2oybZnl39yHGmb/Pentec-Health-Website?type=design&node-id=1-440&t=Sxuadq2W6miqq00J-1&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A440&show-proto-sidebar=1"
+    },
+    {
+        "id": "1",
         "name": "Oreland Pack 88",
         "team": "orelandpack88.com",
         "image": "assets/img/work/orlandpack88-lg.jpg",
 		"imageSm": "assets/img/work/oreland-xs.jpg",
         "url": "https://orelandpack88.com/"
+    },
+    {
+        "id": "1",
+        "name": "Pentec Health Portal",
+        "team": " --- ",
+        "image": "assets/img/work/pentec-portal-xs.jpg",
+		"imageSm": "assets/img/work/pentec-portal-xs.jpg",
+        "url": "https://www.figma.com/proto/NWh5KMCrfadlBwTOumb42W/Pentec-Health---Specialty-Care-Portal?type=design&node-id=1112-7233&t=J0OpRZbZhGnydzLM-0&scaling=min-zoom&page-id=1112%3A3482&starting-point-node-id=1112%3A7233&show-proto-sidebar=1"
     },
     {
         "id": "1",
