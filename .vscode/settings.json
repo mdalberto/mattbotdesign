@@ -1,0 +1,44 @@
+{
+    "liveServer.settings.port": 5501,
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.autofetch": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveSassCompile.settings.forceBaseDirectory": "",
+    "liveSassCompile.settings.compileOnWatch": false,
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "liveSassCompile.settings.useNewCompiler": true,
+    "liveSassCompile.settings.showOutputWindowOn": "Warning",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            //"savePath": "/src/assets/css/",
+            "savePathReplacementPairs": null
+        },
+        { "format": "compressed",
+            "extensionName": "-min.css",
+            //"savePath": "/src/assets/css/",
+            "savePathReplacementPairs": null,
+            "generateMap": false
+        },
+
+    ],"liveSassCompile.settings.excludeList": [
+        "/**/node_modules/**",
+        "/.vscode/**",
+        "/**/_site/**",
+        "/**/_data/**",   
+        "/**/_includes/**",
+        "/**/privacy/**",  
+        "/**/faq/**",
+        "/**/app-terms/**",
+        "/**/terms/**"  
+    ],"liveSassCompile.settings.includeItems": [
+        "/src/assets/scss/styles.scss"],
+    "explorer.confirmDelete": false,
+    "liveSassCompile.settings.autoprefix": [
+    ],
+    "liveSassCompile.settings.partialsList": [
+        "/**/_*.s[ac]ss"
+    ]
+}

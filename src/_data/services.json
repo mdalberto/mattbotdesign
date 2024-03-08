@@ -1,0 +1,38 @@
+[
+    {
+        "id": "dev",
+        "title": "User Interface Design",
+        "image": "/assets/img/icon-nhl.svg",
+        "content": "<p></p>"
+    },
+    {
+        "id": "contract",
+        "title": "Graphic Design",
+        "image": "/assets/img/icon-contract.svg",
+        "content": "<p></p>"
+    },
+    {
+        "id": "endorse",
+        "title": "Frontend Code",
+        "image": "/assets/img/icon-endorse.svg",
+        "content": "<p></p>"
+    },
+    {
+        "id": "tax",
+        "title": "UX Strategy",
+        "image": "/assets/img/icon-tax.svg",
+        "content": "<p></p>"
+    },
+    {
+        "id": "eu",
+        "title": "UX Testing Strategy",
+        "image": "/assets/img/icon-eu.svg",
+        "content": "<p></p>"
+    },
+    {
+        "id": "finance",
+        "title": "Page Performance Guidance",
+        "image": "/assets/img/icon-finance.svg",
+        "content": "<p></p>"
+    }
+]
