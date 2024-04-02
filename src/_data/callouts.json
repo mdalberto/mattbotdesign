@@ -3,18 +3,18 @@
     "id": "1",
     "title": "Interface Design",
     "image": "assets/img/work/ui.png",
-    "content": "<p class='p-large mb-4 pb-2'>Hundreds maybe thousands of diagrams, mockups, and specs have been produced to help stakeholders and guide developers in coding the interactive elements needed for users to progress through various tasks and funnels.</p><p>My services specialize in various forms of visual communication to faciliate the conversation (or handoff) dependant upon the need.</p><ul><li>Clickable Prototypes</li><li>Hi-Fidelity Static Mockups</li><li>Mockup + Comments + Diagram Hypbrids (pictured)</li><li>Mockup + Developer Spec Hybrids</li></ul>"
+    "content": "<p class='p-large mb-4 pb-2'>Thousands of diagrams, mockups, and specs have been produced to help stakeholders and guide developers in coding the interactive elements needed for users to progress through various tasks and funnels.</p><p>My services specialize in various forms of visual communication to facilitate the conversation (or handoff) dependant upon the need.</p><ul><li>Clickable Prototypes</li><li>Hi-Fidelity Static Mockups</li><li>Mockup + Comments + Diagram Hybrids (pictured)</li><li>Mockup + Developer Spec Hybrids</li></ul>"
     },
     {
         "id": "3",
         "title": "Design, Branding & AI",
         "image": "assets/img/work/branding.png",
-		"content": "<p class='p-large mb-4 pb-2'>When it's appropriate, work flows of mine take advantage of AI tools to harness rapid visual image creation of which then gets refined further to become relevant, specific and standard to a particular business's visual branding and commuincation goals.</p>"
+		"content": "<p class='p-large mb-4 pb-2'>When it's appropriate, work flows of mine take advantage of AI tools to harness rapid visual image creation of which then gets refined further to become relevant, specific and standard to a particular business's visual branding and communication goals.</p>"
     },
     {
         "id": "2",
         "title": "Optimization Experiments",
-        "content": "<p class='p-large mb-4 pb-2'>Are the graphics working? Is the copy being understood? How likely is the user able to understand and complete what they want to complete on your website/app? These questions get answered through user testing.</p><p>User Testing activities I can consult on are:</p><ul><li>Conversion Experiement Suggestions*</li><li>Ideation Workshops</li><li>Testing Strategy</li></ul>",
+        "content": "<p class='p-large mb-4 pb-2'>Are the graphics working? Is the copy being understood? How likely is the user able to understand and complete what they want to complete on your website/app? These questions get answered through user testing.</p><p>User Testing activities I can consult on are:</p><ul><li>Conversion Experiment Suggestions*</li><li>Ideation Workshops</li><li>Testing Strategy</li></ul>",
         "image": "assets/img/work/collab.jpg"
     }
 ]
