@@ -1,0 +1,761 @@
+
+
+
+    <style type="text/css">
+        .image-box{ display:inline-block;
+        border: 4px solid white; text-align:center; padding:4px;
+        border-radius: 16px;
+        margin:6px;}
+        
+        .image-box img{ max-width:230px !important}
+               .max{
+            max-width:600px;
+            }     
+        p{ font-size: 18px;}
+
+        </style>
+        
+        
+        <h4 style="font-size: 1.625rem;">Pack 88 Class B Order Form</h4>
+        <p>'Class B' T-shirts and sweatshirts are Cub Scout uniforms that are worn at causal Pack events and outings.<br /> For parents, they can help identify each other while out at events.</p> 
+<br />
+        <p class="max">
+        <label> Your Name
+        [text* text-name] </label>
+        </p>
+<p class="max">
+        <label>Email
+        [email* your-email] </label>
+        <div class="clear"></div>
+        </p>
+        
+        <br />
+        <h3>Kids Hoodies</h3>
+        
+        <hr style="margin-top:0px;"/>
+        
+        
+        <div class="image-box" id="kidshoodieImageSM" >
+          <img src="/images/hoodie-1.jpg" alt="SM Hoodie (kids)" >
+          <div class="price">$30</div>
+          
+          <div class="mt-2">
+            <label class="mb-2">SM Hoodie (kids)</label>
+          </div>
+        
+          [select* kids_SM_hoodie_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+        
+          [hidden kids_SM_hoodie_cost "30"]
+        
+          <div class="result">
+            Result: $<span id="kids_SM_hoodie_result">0</span>
+          </div>
+        </div>
+        
+        <div class="image-box" id="kidshoodieImageMD">
+          <img src="/images/hoodie-2.jpg" alt="MD Hoodie">
+          <div class="price">$35</div>
+          
+          <div class="mt-2">
+            <label class="mb-2">MD Hoodie (kids)</label>
+          </div>
+        
+          [select* kids_MD_hoodie_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+        
+          [hidden kids_MD_hoodie_cost "35"]
+        
+          <div class="result">
+            Result: $<span id="kids_MD_hoodie_result">0</span>
+          </div>
+        </div>
+        
+        <div class="image-box" id="kidshoodieImageLG">
+          <img src="/images/hoodie-3.jpg" alt="LG Hoodie"  >
+          <div class="price">$40</div>
+          
+          <div class="mt-2">
+            <label class="mb-2">LG Hoodie (kids)</label>
+          </div>
+        
+          [select* kids_LG_hoodie_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+        
+          [hidden kids_LG_hoodie_cost "40"]
+        
+          <div class="result">
+            Result: $<span id="kids_LG_hoodie_result">0</span>
+          </div>
+        </div>
+        
+        <div class="image-box" id="kidshoodieImageXL" >
+          <img src="/images/hoodie-4.jpg" alt="XL Hoodie" >
+          <div class="price">$45</div>
+          
+          <div class="mt-2">
+            <label class="mb-2">XL Hoodie (kids)</label>
+          </div>
+        
+          [select* kids_XL_hoodie_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+        
+          [hidden kids_XL_hoodie_cost "45"]
+        
+          <div class="result">
+            Result: $<span id="kids_XL_hoodie_result">0</span>
+          </div>
+        </div>
+        
+        <br />
+        <h3>Adult Hoodies</h3>
+        
+        <hr style="margin-top:0px;"/>
+        
+        
+        <div class="image-box" id="hoodieImageSM">
+          <img src="/images/hoodie-1.jpg" alt="SM Hoodie (adults)" >
+          <div class="price">$30</div>
+          
+          <div class="mt-2">
+            <label class="mb-2">SM Hoodie (adults)</label>
+          </div>
+        
+          [select* adults_SM_hoodie_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+        
+          [hidden adults_SM_hoodie_cost "30"]
+        
+          <div class="result">
+            Result: $<span id="adults_SM_hoodie_result">0</span>
+          </div>
+        </div>
+        
+        <div class="image-box" id="hoodieImageMD">
+          <img src="/images/hoodie-2.jpg" alt="MD Hoodie"  >
+          <div class="price">$35</div>
+          
+          <div class="mt-2">
+            <label class="mb-2">MD Hoodie (adults)</label>
+          </div>
+        
+          [select* adults_MD_hoodie_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+        
+          [hidden adults_MD_hoodie_cost "35"]
+        
+          <div class="result">
+            Result: $<span id="adults_MD_hoodie_result">0</span>
+          </div>
+        </div>
+        
+        <div class="image-box"  id="hoodieImageLG" >
+          <img src="/images/hoodie-3.jpg" alt="LG Hoodie">
+          <div class="price">$40</div>
+          
+          <div class="mt-2">
+            <label class="mb-2">LG Hoodie (adults)</label>
+          </div>
+        
+          [select* adults_LG_hoodie_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+        
+          [hidden adults_LG_hoodie_cost "40"]
+        
+          <div class="result">
+            Result: $<span id="adults_LG_hoodie_result">0</span>
+          </div>
+        </div>
+        
+        <div class="image-box" id="hoodieImageXL" >
+          <img src="/images/hoodie-4.jpg" alt="XL Hoodie" >
+          <div class="price">$45</div>
+          
+          <div class="mt-2">
+            <label class="mb-2">XL Hoodie (adults)</label>
+          </div>
+        
+          [select* adults_XL_hoodie_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+        
+          [hidden adults_XL_hoodie_cost "45"]
+        
+          <div class="result">
+            Result: $<span id="adults_XL_hoodie_result">0</span>
+          </div>
+        </div>
+        
+
+
+
+<br />
+<h3>Kids T-Shirts</h3>
+
+<hr style="margin-top:0px;"/>
+
+
+<div class="image-box" id="kidsshirtImageSM" >
+  <img src="/images/shirt-1.jpg" alt="SM shirt (kids)" >
+  <div class="price">$30</div>
+  
+  <div class="mt-2">
+    <label class="mb-2">SM T-shirt (kids)</label>
+  </div>
+
+  [select* kids_SM_shirt_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+
+  [hidden kids_SM_shirt_cost "30"]
+
+  <div class="result">
+    Result: $<span id="kids_SM_shirt_result">0</span>
+  </div>
+</div>
+
+<div class="image-box" id="kidsshirtImageMD">
+  <img src="/images/shirt-2.jpg" alt="MD shirt">
+  <div class="price">$35</div>
+  
+  <div class="mt-2">
+    <label class="mb-2">MD T-shirt (kids)</label>
+  </div>
+
+  [select* kids_MD_shirt_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+
+  [hidden kids_MD_shirt_cost "35"]
+
+  <div class="result">
+    Result: $<span id="kids_MD_shirt_result">0</span>
+  </div>
+</div>
+
+<div class="image-box" id="kidsshirtImageLG">
+  <img src="/images/shirt-3.jpg" alt="LG shirt"  >
+  <div class="price">$40</div>
+  
+  <div class="mt-2">
+    <label class="mb-2">LG T-shirt (kids)</label>
+  </div>
+
+  [select* kids_LG_shirt_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+
+  [hidden kids_LG_shirt_cost "40"]
+
+  <div class="result">
+    Result: $<span id="kids_LG_shirt_result">0</span>
+  </div>
+</div>
+
+<div class="image-box" id="kidsshirtImageXL" >
+  <img src="/images/shirt-4.jpg" alt="XL shirt" >
+  <div class="price">$45</div>
+  
+  <div class="mt-2">
+    <label class="mb-2">XL T-shirt (kids)</label>
+  </div>
+
+  [select* kids_XL_shirt_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+
+  [hidden kids_XL_shirt_cost "45"]
+
+  <div class="result">
+    Result: $<span id="kids_XL_shirt_result">0</span>
+  </div>
+</div>
+
+<br />
+<h3>Adult T-shirt</h3>
+
+<hr style="margin-top:0px;"/>
+
+
+<div class="image-box" id="shirtImageSM">
+  <img src="/images/shirt-1.jpg" alt="SM shirt (adults)" >
+  <div class="price">$30</div>
+  
+  <div class="mt-2">
+    <label class="mb-2">SM T-shirt (adults)</label>
+  </div>
+
+  [select* adults_SM_shirt_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+
+  [hidden adults_SM_shirt_cost "30"]
+
+  <div class="result">
+    Result: $<span id="adults_SM_shirt_result">0</span>
+  </div>
+</div>
+
+<div class="image-box" id="shirtImageMD">
+  <img src="/images/shirt-2.jpg" alt="MD shirt"  >
+  <div class="price">$35</div>
+  
+  <div class="mt-2">
+    <label class="mb-2">MD T-shirt (adults)</label>
+  </div>
+
+  [select* adults_MD_shirt_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+
+  [hidden adults_MD_shirt_cost "35"]
+
+  <div class="result">
+    Result: $<span id="adults_MD_shirt_result">0</span>
+  </div>
+</div>
+
+<div class="image-box"  id="shirtImageLG" >
+  <img src="/images/shirt-3.jpg" alt="LG shirt">
+  <div class="price">$40</div>
+  
+  <div class="mt-2">
+    <label class="mb-2">LG T-shirt (adults)</label>
+  </div>
+
+  [select* adults_LG_shirt_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+
+  [hidden adults_LG_shirt_cost "40"]
+
+  <div class="result">
+    Result: $<span id="adults_LG_shirt_result">0</span>
+  </div>
+</div>
+
+<div class="image-box" id="shirtImageXL" >
+  <img src="/images/shirt-4.jpg" alt="XL shirt" >
+  <div class="price">$45</div>
+  
+  <div class="mt-2">
+    <label class="mb-2">XL T-shirt (adults)</label>
+  </div>
+
+  [select* adults_XL_shirt_select "0|-- QTY --" "1|1" "2|2" "3|3" "4|4" "5|5" "6|6"]
+
+  [hidden adults_XL_shirt_cost "45"]
+
+  <div class="result">
+    Result: $<span id="adults_XL_shirt_result">0</span>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+        <!-- ////////////////////////////////////////////////////////////////////////    JS   -->
+
+
+
+       <script>
+
+        // GLobal Stuff
+
+        // Toggle border and calculate the price for each shirt size
+        function toggleCheck(img, selectName) {
+          const select = document.querySelector(select[name="${selectName}"]);
+          const qty = select.value;
+      
+          if (qty != "0") {
+            img.style.border = '4px solid #eee16c';  // Add border if value is not 0
+          } else {
+            img.style.border = '';  // Remove border if value is 0
+          }
+        }
+       </script>
+       
+
+
+
+        <!-- //////    Hoodies   -->
+        
+
+        <script>
+
+          // Kids Hoodies 
+          
+            // Listen for changes to the dropdown for each hoodie size
+            document.addEventListener('change', function (event) {
+              const select = event.target;
+          
+              // Handle SM Hoodie selection
+              if (select.name === 'kids_SM_hoodie_select') {
+                const qty = parseInt(select.value) || 0;
+                const cost = parseInt(document.querySelector('input[name="kids_SM_hoodie_cost"]').value) || 0;
+                const total = qty * cost;
+                document.getElementById('kids_SM_hoodie_result').textContent = total;
+          
+                // Apply/remove border based on selection
+                const img = document.getElementById('kidshoodieImageSM');
+                if (qty !== 0) {
+                  img.style.border = '4px solid #eee16c';
+                } else {
+                  img.style.border = '';
+                }
+              }
+          
+              // Handle MD Hoodie selection
+              if (select.name === 'kids_MD_hoodie_select') {
+                const qty = parseInt(select.value) || 0;
+                const cost = parseInt(document.querySelector('input[name="kids_MD_hoodie_cost"]').value) || 0;
+                const total = qty * cost;
+                document.getElementById('kids_MD_hoodie_result').textContent = total;
+          
+                // Apply/remove border based on selection
+                const img = document.getElementById('kidshoodieImageMD');
+                if (qty !== 0) {
+                  img.style.border = '4px solid #eee16c';
+                } else {
+                  img.style.border = '';
+                }
+              }
+          
+              // Handle LG Hoodie selection
+              if (select.name === 'kids_LG_hoodie_select') {
+                const qty = parseInt(select.value) || 0;
+                const cost = parseInt(document.querySelector('input[name="kids_LG_hoodie_cost"]').value) || 0;
+                const total = qty * cost;
+                document.getElementById('kids_LG_hoodie_result').textContent = total;
+          
+                // Apply/remove border based on selection
+                const img = document.getElementById('kidshoodieImageLG');
+                if (qty !== 0) {
+                  img.style.border = '4px solid #eee16c';
+                } else {
+                  img.style.border = '';
+                }
+              }
+          
+              // Handle XL Hoodie selection
+              if (select.name === 'kids_XL_hoodie_select') {
+                const qty = parseInt(select.value) || 0;
+                const cost = parseInt(document.querySelector('input[name="kids_XL_hoodie_cost"]').value) || 0;
+                const total = qty * cost;
+                document.getElementById('kids_XL_hoodie_result').textContent = total;
+          
+                // Apply/remove border based on selection
+                const img = document.getElementById('kidshoodieImageXL');
+                if (qty !== 0) {
+                  img.style.border = '4px solid #eee16c';
+                } else {
+                  img.style.border = '';
+                }
+              }
+            });
+  
+          </script>
+
+
+        <script>
+
+        // Adult Hoodies 
+        
+          // Listen for changes to the dropdown for each hoodie size
+          document.addEventListener('change', function (event) {
+            const select = event.target;
+        
+            // Handle SM Hoodie selection for adults
+            if (select.name === 'adults_SM_hoodie_select') {
+              const qty = parseInt(select.value) || 0;
+              const cost = parseInt(document.querySelector('input[name="adults_SM_hoodie_cost"]').value) || 0;
+              const total = qty * cost;
+              document.getElementById('adults_SM_hoodie_result').textContent = total;
+        
+              // Apply/remove border based on selection
+              const img = document.getElementById('hoodieImageSM');
+              if (qty !== 0) {
+                img.style.border = '4px solid #eee16c';
+              } else {
+                img.style.border = '';
+              }
+            }
+        
+            // Handle MD Hoodie selection for adults
+            if (select.name === 'adults_MD_hoodie_select') {
+              const qty = parseInt(select.value) || 0;
+              const cost = parseInt(document.querySelector('input[name="adults_MD_hoodie_cost"]').value) || 0;
+              const total = qty * cost;
+              document.getElementById('adults_MD_hoodie_result').textContent = total;
+        
+              // Apply/remove border based on selection
+              const img = document.getElementById('hoodieImageMD');
+              if (qty !== 0) {
+                img.style.border = '4px solid #eee16c';
+              } else {
+                img.style.border = '';
+              }
+            }
+        
+            // Handle LG Hoodie selection for adults
+            if (select.name === 'adults_LG_hoodie_select') {
+              const qty = parseInt(select.value) || 0;
+              const cost = parseInt(document.querySelector('input[name="adults_LG_hoodie_cost"]').value) || 0;
+              const total = qty * cost;
+              document.getElementById('adults_LG_hoodie_result').textContent = total;
+        
+              // Apply/remove border based on selection
+              const img = document.getElementById('hoodieImageLG');
+              if (qty !== 0) {
+                img.style.border = '4px solid #eee16c';
+              } else {
+                img.style.border = '';
+              }
+            }
+        
+            // Handle XL Hoodie selection for adults
+            if (select.name === 'adults_XL_hoodie_select') {
+              const qty = parseInt(select.value) || 0;
+              const cost = parseInt(document.querySelector('input[name="adults_XL_hoodie_cost"]').value) || 0;
+              const total = qty * cost;
+              document.getElementById('adults_XL_hoodie_result').textContent = total;
+        
+              // Apply/remove border based on selection
+              const img = document.getElementById('hoodieImageXL');
+              if (qty !== 0) {
+                img.style.border = '4px solid #eee16c';
+              } else {
+                img.style.border = '';
+              }
+            }
+          });
+        </script>
+        
+        
+        <!-- ////// T-SHirts    -->
+
+
+
+       <script>
+
+        // Kids T-Shirts
+      
+        // Listen for changes to the dropdown for each  shirt size
+        document.addEventListener('change', function (event) {
+          const select = event.target;
+      
+          // Handle SM  shirt selection
+          if (select.name === 'kids_SM_shirt_select') {
+            const qty = parseInt(select.value) || 0;
+            const cost = parseInt(document.querySelector('input[name="kids_SM_shirt_cost"]').value) || 0;
+            const total = qty * cost;
+            document.getElementById('kids_SM_shirt_result').textContent = total;
+      
+            // Apply/remove border based on selection
+            const img = document.getElementById('kidsshirtImageSM');
+            if (qty !== 0) {
+              img.style.border = '4px solid #eee16c';
+            } else {
+              img.style.border = '';
+            }
+          }
+      
+          // Handle MD  shirt selection
+          if (select.name === 'kids_MD_shirt_select') {
+            const qty = parseInt(select.value) || 0;
+            const cost = parseInt(document.querySelector('input[name="kids_MD_shirt_cost"]').value) || 0;
+            const total = qty * cost;
+            document.getElementById('kids_MD_shirt_result').textContent = total;
+      
+            // Apply/remove border based on selection
+            const img = document.getElementById('kidsshirtImageMD');
+            if (qty !== 0) {
+              img.style.border = '4px solid #eee16c';
+            } else {
+              img.style.border = '';
+            }
+          }
+      
+          // Handle LG  shirt selection
+          if (select.name === 'kids_LG_shirt_select') {
+            const qty = parseInt(select.value) || 0;
+            const cost = parseInt(document.querySelector('input[name="kids_LG_shirt_cost"]').value) || 0;
+            const total = qty * cost;
+            document.getElementById('kids_LG_shirt_result').textContent = total;
+      
+            // Apply/remove border based on selection
+            const img = document.getElementById('kidsshirtImageLG');
+            if (qty !== 0) {
+              img.style.border = '4px solid #eee16c';
+            } else {
+              img.style.border = '';
+            }
+          }
+      
+          // Handle XL  shirt selection
+          if (select.name === 'kids_XL_shirt_select') {
+            const qty = parseInt(select.value) || 0;
+            const cost = parseInt(document.querySelector('input[name="kids_XL_shirt_cost"]').value) || 0;
+            const total = qty * cost;
+            document.getElementById('kids_XL_shirt_result').textContent = total;
+      
+            // Apply/remove border based on selection
+            const img = document.getElementById('kidsshirtImageXL');
+            if (qty !== 0) {
+              img.style.border = '4px solid #eee16c';
+            } else {
+              img.style.border = '';
+            }
+          }
+        });
+      </script>
+
+
+       <script>
+
+        // Adults T-Shirts
+
+        // Listen for changes to the dropdown for each shirt size
+        document.addEventListener('change', function (event) {
+          const select = event.target;
+      
+          // Handle SM shirt selection for adults
+          if (select.name === 'adults_SM_shirt_select') {
+            const qty = parseInt(select.value) || 0;
+            const cost = parseInt(document.querySelector('input[name="adults_SM_shirt_cost"]').value) || 0;
+            const total = qty * cost;
+            document.getElementById('adults_SM_shirt_result').textContent = total;
+      
+            // Apply/remove border based on selection
+            const img = document.getElementById('shirtImageSM');
+            if (qty !== 0) {
+              img.style.border = '4px solid #eee16c';
+            } else {
+              img.style.border = '';
+            }
+          }
+      
+          // Handle MD  shirt selection for adults
+          if (select.name === 'adults_MD_shirt_select') {
+            const qty = parseInt(select.value) || 0;
+            const cost = parseInt(document.querySelector('input[name="adults_MD_shirt_cost"]').value) || 0;
+            const total = qty * cost;
+            document.getElementById('adults_MD_shirt_result').textContent = total;
+      
+            // Apply/remove border based on selection
+            const img = document.getElementById('shirtImageMD');
+            if (qty !== 0) {
+              img.style.border = '4px solid #eee16c';
+            } else {
+              img.style.border = '';
+            }
+          }
+      
+          // Handle LG  shirt selection for adults
+          if (select.name === 'adults_LG_shirt_select') {
+            const qty = parseInt(select.value) || 0;
+            const cost = parseInt(document.querySelector('input[name="adults_LG_shirt_cost"]').value) || 0;
+            const total = qty * cost;
+            document.getElementById('adults_LG_shirt_result').textContent = total;
+      
+            // Apply/remove border based on selection
+            const img = document.getElementById('shirtImageLG');
+            if (qty !== 0) {
+              img.style.border = '4px solid #eee16c';
+            } else {
+              img.style.border = '';
+            }
+          }
+      
+          // Handle XL  shirt selection for adults
+          if (select.name === 'adults_XL_shirt_select') {
+            const qty = parseInt(select.value) || 0;
+            const cost = parseInt(document.querySelector('input[name="adults_XL_shirt_cost"]').value) || 0;
+            const total = qty * cost;
+            document.getElementById('adults_XL_shirt_result').textContent = total;
+      
+            // Apply/remove border based on selection
+            const img = document.getElementById('shirtImageXL');
+            if (qty !== 0) {
+              img.style.border = '4px solid #eee16c';
+            } else {
+              img.style.border = '';
+            }
+          }
+        });
+      </script>       
+        
+        
+
+
+ <br />
+<hr/>
+<br />
+
+<!-- Total Section -->
+<hr />
+<div id="total-container" style="margin-top: 20px;">
+  <label for="total-cost" style="font-size: 1.2em; font-weight: bold;">Total: $<span id="total-cost">0</span></label>
+</div>
+
+<!-- Hidden Field for Contact Form 7 -->
+[text total-cost id:total-cost-field readonly]
+
+<p>
+Please make payment via Venmo to <strong>@Lori-Sussman-2</strong>.<br />
+2025 Order Deadline: <strong>Mon - 2/4/2025</strong>.<br />
+Estimated date of delivery: <strong>Wed - 2/20/2025</strong>.<br />
+</p>
+<br />
+
+[submit "Place Order Request"]<br /><br />
+
+
+<!-- /////////////////////////////////   Totals /////////////////////////////////// -->
+
+<script>// Function to calculate and update the total cost
+  function updateTotalCost() {
+    let totalCost = 0;
+
+    // Calculate total for kids hoodies
+    const kidsHoodies = ['kids_SM_hoodie', 'kids_MD_hoodie', 'kids_LG_hoodie', 'kids_XL_hoodie'];
+    kidsHoodies.forEach(size => {
+      const qty = parseInt(document.querySelector(`select[name="${size}_select"]`).value) || 0;
+      const cost = parseInt(document.querySelector(`input[name="${size}_cost"]`).value) || 0;
+      totalCost += qty * cost;
+    });
+
+    // Calculate total for adults hoodies
+    const adultsHoodies = ['adults_SM_hoodie', 'adults_MD_hoodie', 'adults_LG_hoodie', 'adults_XL_hoodie'];
+    adultsHoodies.forEach(size => {
+      const qty = parseInt(document.querySelector(`select[name="${size}_select"]`).value) || 0;
+      const cost = parseInt(document.querySelector(`input[name="${size}_cost"]`).value) || 0;
+      totalCost += qty * cost;
+    });
+
+
+        // Calculate total for kids shirt
+        const kidsshirt = ['kids_SM_shirt', 'kids_MD_shirt', 'kids_LG_shirt', 'kids_XL_shirt'];
+        kidsshirt.forEach(size => {
+      const qty = parseInt(document.querySelector(`select[name="${size}_select"]`).value) || 0;
+      const cost = parseInt(document.querySelector(`input[name="${size}_cost"]`).value) || 0;
+      totalCost += qty * cost;
+    });
+  
+    // Calculate total for adults shirt
+    const adultsshirt = ['adults_SM_shirt', 'adults_MD_shirt', 'adults_LG_shirt', 'adults_XL_shirt'];
+    adultsshirt.forEach(size => {
+      const qty = parseInt(document.querySelector(`select[name="${size}_select"]`).value) || 0;
+      const cost = parseInt(document.querySelector(`input[name="${size}_cost"]`).value) || 0;
+      totalCost += qty * cost;
+    });
+
+
+        // Update the total cost in the label
+        document.getElementById('total-cost').textContent = totalCost;
+
+// Update the hidden Contact Form 7 field
+const totalField = document.querySelector('#total-cost-field');
+if (totalField) {
+  totalField.value = totalCost;
+}
+
+
+
+    // Update the total cost in the label
+    document.getElementById('total-cost').textContent = totalCost;
+  }
+
+  // Add event listeners to all select dropdowns to update total on change
+  document.querySelectorAll('select').forEach(select => {
+    select.addEventListener('change', updateTotalCost);
+  });
+  
+  
+  
+  
+  
+  </script>
+

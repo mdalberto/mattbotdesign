@@ -60,10 +60,10 @@ currentPage: homepage
     <div class="container aos-init aos-animate" data-aos="fade-up"><hr /></div>
 
     <!-- ======= Our Work Section ======= -->
-    <section id="work" class="work">
+    <section class="work" id="work">
       <div class="container width-max-sm" data-aos="fade-up">
 
-        <div class="section-title " style="max-width:800px; margin-left:auto; margin-right: auto;">
+        <div class="section-title " style="max-width:800px; margin-left:auto; margin-right: auto;" id="work" >
           <h2>10+ Years of App, Website, & Desktop Application Experience</h2>
           <p>These projects are representative of the range of digital products I've worked on over the years.</p>
           <div class="row">
@@ -107,88 +107,14 @@ currentPage: homepage
 
 
         </div>
-        <!-- <div class="section-title text-center">
-        <a href="/athletes" class="btn btn-secondary" >
-          View All
-        </a>
-      </div> -->
+
       </div>
     </section><!-- End Services Section -->
 
 
 
-    <!-- ======= Services Section ======= -->
-    <!-- <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title" style="max-width:800px; margin-left:auto; margin-right: auto;">
-          <h2>Client Services</h2>
-          <p>Mattbotdesign is committed to the long term success of its client. We&nbsp;offer&nbsp;assistance&nbsp;with:</p>
-        </div>
-
-        <div class="row justify-content-center mr-0 ml-0 ">
-
-          {% for service in services %}
-          <div  style="cursor:auto" class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6 d-flex mt-4 mt-md-0 mb-md-5  text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200"> -->
-
-            <!-- <div  style="cursor:pointer;"  onclick="location.href='{{global.baseUrl}}services#{{service.id}}';" class="col-xl-3 col-md-6 col-sm-6 col-xs-6 col-6 d-flex mt-4 mt-md-0 mb-md-5  text-center justify-content-center" data-aos="zoom-in" data-aos-delay="200"> -->
-              <!-- <div class="icon-box d-flex justify-content-center align-items-center"> -->
-                <!-- <div class="icon"><img src="{{service.image}}" /></div> -->
-                <!-- <h4>{{service.title}}</h4>
-              </div>
-            </div>
-
-          {% endfor %}
-
-
-        </div>
-
-      </div>
-    </section>End Services Section -->
-
-
-
-    <!-- ======= Team Section ======= -->
-    <!-- ======= Our Athletes Section ======= -->
-    <!-- <section id="athletes" class="work">
-      <div class="container width-max-sm" data-aos="fade-up">
-
-        <div class="section-title text-center">
-          <h2>Meet the Team</h2>
-        </div>
-
-        <div class="row justify-content-center ">
-
-          {% for mate in team %}
-
-              <div class="col-xl-2 col-md-2 col-sm-4 col-xs-4 col-4 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon-box">
-                <div class="icon"><img src="{{mate.imageSm}}" /></div>
-                <h4>{{mate.name}}</h4>
-                <p class="mb-4">{{mate.title}}</p>
-              </div>
-            </div>
-
-          {% endfor %}
-
-
-        </div>
-        <div class="section-title text-center">
-        <a href="https://www.linkedin.com/in/mdalberto/" target="_blank" class="btn btn-secondary" >
-          Learn More
-        </a>
-      </div>
-      </div>
-    </section> -->
-  
-    <!-- End Team Section -->
-
-
-
-
-
     <!-- <div class="container aos-init aos-animate" data-aos="fade-up"><hr /></div> -->
-    <div class="container aos-init aos-animate" data-aos="fade-up"><hr /></div>
+    <div id="services"  class="container aos-init aos-animate" data-aos="fade-up"><hr /></div>
     {% for callouts in callouts %}
       <!-- Header -->
       <section class="hero overflow-visible">
@@ -209,30 +135,6 @@ currentPage: homepage
       </section> 
       <!-- end of header -->
       {% endfor %}
-
-
-      <!-- ======= Scouting Section ======= -->
-      <!-- <section id="scouting" class="scouting">
-        <div class="container width-max-xs" data-aos="fade-up" style="max-width:800px">
-          <div class="section-title ">
-            <h3>UI & Flow Specs</h3>
-            <img src="assets/img/work/flow.jpg" style="width:100%"/>
-            <br /><br/>
-            <h3>Design Systems</h3>
-            <img src="assets/img/work/designsystem.jpg" style="width:100%"/>
-            <br /><br/>
-            <h3>Logo Design</h3>
-            <img src="assets/img/work/logos.jpg" style="width:100%"/>
-            <br /><br/>
-            <h3>Optimization Workshops</h3>
-            <img src="assets/img/work/collab.jpg" style="width:100%"/>
-          </div>
-        </div>
-      </section> -->
-
-
-
-
 
   </main>
 
