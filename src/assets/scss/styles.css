@@ -47,11 +47,12 @@ FCFDDB // yellow
 
 */
 :root {
-  --primary: #4e3445;
+  --primary: #1c2839;
   --primary-shade-20: #f9ae8c;
   --secondary: #f9ae8c;
   --primary-tint-20: #DBEFF9;
   --terchiary: #1c2839;
+  --text: #1c2839;
 }
 
 @media (max-width: 1200px) {
@@ -61,7 +62,8 @@ FCFDDB // yellow
 }
 body {
   font-family: "roboto", sans-serif;
-  color: white;
+  color: var(--text);
+  background: #efeff1;
 }
 
 a {
@@ -93,13 +95,25 @@ h6 {
 }
 
 /* Global stuff */
+@media (min-width: 780px) {
+  .mr-md-4 {
+    margin-right: 60px !important;
+  }
+}
 .nav-spacer {
-  padding-top: 120px;
+  padding-top: 50px;
   overflow-x: hidden;
 }
 
 .text-primary {
   color: var(--primary) !important;
+}
+
+.summary-services {
+  font-size: 18px;
+}
+.summary-services li {
+  margin-bottom: 16px;
 }
 
 .btn:hover {
@@ -113,6 +127,7 @@ h6 {
 .text-big {
   font-size: 28px;
   margin-bottom: 0.75rem;
+  font-family: "roboto", sans-serif;
 }
 
 .btn-link {
@@ -126,7 +141,7 @@ h6 {
 .btn-primary {
   display: inline-block;
   padding: 1.2rem 2.75rem;
-  border: 1px solid white;
+  border: 1px solid var(--terchiary);
   border-radius: 32px;
   background-color: white;
   color: black;
@@ -140,7 +155,7 @@ h6 {
 .btn-primary:hover, .btn-primary:focus {
   background-color: white;
   border: 1px solid var(--secondary);
-  color: #C46E22;
+  color: var(--terchiary);
 }
 
 .btn-secondary {
@@ -156,7 +171,7 @@ h6 {
 .btn-secondary:hover, .btn-secondary:focus {
   background-color: white;
   /*border: 1px solid  var(--secondary);*/
-  color: #C46E22;
+  color: var(--terchiary);
 }
 
 .btn:hover {
@@ -166,15 +181,20 @@ h6 {
 .btn-solid-lg {
   display: inline-block;
   padding: 1.625rem 2.75rem 1.625rem 2.75rem;
-  border: 1px solid #1c1967;
   border-radius: 32px;
-  background-color: #1c1967;
-  color: #fff;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 0;
   text-decoration: none;
   transition: all 0.2s;
+}
+
+hr {
+  margin: 0;
+}
+
+.font-weight-normal {
+  font-weight: normal !important;
 }
 
 /*--------------------------------------------------------------
@@ -258,14 +278,16 @@ h6 {
 .bgd-image2 {
   display: block;
   z-index: -1;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: -25%;
   right: 0;
   bottom: 0;
-  left: 0;
-  object-fit: cover;
+  left: auto;
   width: 100%;
-  height: 100%;
+  opacity: 0.3;
+  background-image: url(/assets/img/phones2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*--------------------------------------------------------------
@@ -292,7 +314,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #fff;
+  color: var(--text);
 }
 
 #header .logo img {
@@ -347,7 +369,7 @@ h6 {
   /* padding: 10px 0 10px 30px; */
   font-size: 15px;
   font-weight: 500;
-  color: white;
+  color: var(--text);
   white-space: nowrap;
   position: relative;
   /* transition: 0.3s; */
@@ -364,7 +386,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: white;
+  color: var(--text);
   position: relative;
 }
 
@@ -385,18 +407,22 @@ h6 {
   margin: 0 1rem;
 }
 
+.nav-group-left li:first-child .nav-link {
+  margin-left: 0;
+}
+
 .navbar .getstarted {
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #fff;
+  color: var(--text);
   font-size: 14px;
   border: 2px solid #47b2e4;
   font-weight: 600;
 }
 
 .navbar .getstarted:hover {
-  color: #fff;
+  color: var(--text);
   background: #31a9e1;
 }
 
@@ -425,7 +451,7 @@ h6 {
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
-  color: #0c3c53;
+  color: var(--text);
 }
 
 .navbar .dropdown ul a i {
@@ -435,7 +461,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #47b2e4;
+  color: var(--text);
 }
 
 .navbar .dropdown:hover > ul {
@@ -479,6 +505,10 @@ h6 {
   }
   .navbar ul {
     display: none;
+  }
+  .nav-group-left li:first-child .nav-link {
+    margin: 0 1rem;
+    margin-bottom: 16px;
   }
 }
 .navbar-mobile {
@@ -600,8 +630,14 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.screen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .home-h1 {
-  color: white;
+  color: var(--text);
   font-size: 60px;
   line-height: 54px;
 }
@@ -660,7 +696,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   position: relative;
-  color: white;
+  color: var(--text);
 }
 
 /* @media (max-width: 768px) {
@@ -775,20 +811,34 @@ section {
 
 .about .content .btn-learn-more:hover {
   background: #47b2e4;
-  color: #fff;
+  color: var(--text);
   text-decoration: none;
+}
+
+.mt-lg-6 {
+  margin-bottom: 40px;
+}
+
+.work-tiles {
+  text-align: center;
+  width: 100%;
+}
+.work-tiles img {
+  border: 1px solid #e7e7e7;
+  max-width: 320px;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .section-title h2 {
-  color: white;
+  color: var(--text);
 }
 
 .services {
   background-color: var(--primary);
-  color: white;
+  color: var(--text);
   background-position: -2000px center;
   background-repeat: no-repeat;
 }
@@ -970,7 +1020,7 @@ section {
 
 .portfolio-details {
   background-color: black;
-  color: white;
+  color: var(--text);
   padding-bottom: 0px;
 }
 
@@ -984,7 +1034,7 @@ section {
 }
 
 .slider-pictures .swiper-nav div {
-  color: white;
+  color: var(--text);
 }
 
 .slider-text {

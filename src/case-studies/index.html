@@ -1,0 +1,61 @@
+---
+layout: layout.html
+title: Mattbotdesign | Matthew Dalberto
+currentPage: case_studies
+---
+
+<!-- <div class="bgd-image2"></div> -->
+<main id="main" class="nav-spacer">
+
+      <!-- Header -->
+      <section class="hero overflow-visible" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 d-md-flex align-items-center" style="z-index:3">
+                    <div>
+                      <p class="text-big mb-0">Case Studies</p>
+                        <!-- <h1 class="home-h1 mb-4">Creative Consultant</h1> -->
+                    </div>
+                </div>
+
+            </div> 
+        </div> 
+      </section> 
+
+
+
+
+    <div class="container aos-init aos-animate" data-aos="fade-up"><hr /></div>
+
+    <!-- ======= Our Work Section ======= -->
+    <section class="work" id="work">
+      <div class="container width-max-sm" data-aos="fade-up">
+
+        <div class="row justify-content-center mt-sm-2">
+
+          {% for work in work %}
+          
+            <div style="cursor:pointer;" onclick="window.open('{{work.url | safe }}');" class="col-xl-4 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
+              
+                <div class="work-tiles"><img src="/{{work.imageSm}}" /></div>
+                <!-- <h4>{{work.name}}</h4> -->
+                <!-- <p class="mb-4">{{work.team}}</p> -->
+            
+            </div>
+
+          {% endfor %}
+            <!-- <div class="d-flex justify-content-center">
+              <a style="z-index:10;" class="btn-primary mb-5 mb-lg-0 btn-solid-lg" href="#work">
+                View More</a>
+            </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+
+  </main>
+

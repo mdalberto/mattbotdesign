@@ -1,0 +1,135 @@
+---
+layout: layout.html
+title: Mattbotdesign | Matthew Dalberto
+currentPage: homepage
+---
+
+
+
+
+<main id="main" class="nav-spacer">
+
+
+      <!-- Header -->
+      <section class="hero overflow-visible" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-md-flex align-items-center"  style="z-index:3">
+                    <div>
+                      <p class="text-big">Matthew Dalberto</p>
+                        <h1 class="home-h1 mb-4">Creative Consultant</h1>
+                        <p class="p-large mb-4 pb-2">Research, Design, Build. I offer a blend of user center design and technology expertise. My passion is to create useable, aesthetically-pleasing digital products, that are useful to people and grow business.</p>
+                        <a style="z-index:10;" class="btn-primary mb-5 mb-lg-0" href="#work">
+                          View Work</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-8 text-center d-flex justify-content-center position-relative ">
+                  <!-- for dotlottie player?-->
+                  <!-- <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>  -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+      </section> <!-- end of header -->
+    <!-- end of header -->
+
+
+
+
+
+
+    <!-- ======= Clients Section ======= -->
+ <section id="cliens" class="cliens section-bg">
+      <div class="container">
+
+        <div class="row d-flex justify-content-center" data-aos="zoom-in">
+          <div class="col-lg-8  align-items-center pt-4 pb-4">
+          <p class="text-big">
+          </p></div> 
+        </div>
+
+      </div>
+    </section>
+    <!-- End Cliens Section -->
+
+    <div class="container aos-init aos-animate" data-aos="fade-up"><hr /></div>
+
+    <!-- ======= Our Work Section ======= -->
+    <section class="work" id="work">
+      <div class="container width-max-sm" data-aos="fade-up">
+
+        <div class="section-title " style="max-width:800px; " id="work" >
+          <h2>10+ Years of App, Website, & Desktop Application Experience</h2>
+          <p>These projects are representative of the range of digital products I've worked on over the years.</p>
+          <div class="row">
+            <div class="col-6">
+              <p>Activities (various degrees per project):</p>
+              <ul>
+                <li>Product Design Systems</li>
+                <li>Improvements to Interface Effectiveness</li>
+                <li>User Interface & Design Mockups</li>
+                <li>User Flow Diagramming & Documentation</li>
+                <li>Branding & Rebranding Visual Design</li>
+                <li>Complete Website Builds</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <p>Products Types:</p>
+                <ul>
+                  <li>Console Applications</li>
+                  <li>Mobile Apps</li>
+                  <li>Responsive Websites</li>
+                </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row justify-content-center ">
+
+          {% for work in work %}
+          
+            <div style="cursor:pointer;" onclick="window.open('{{work.url | safe }}');" class="col-xl-3 col-md-3 col-sm-12 col-xs-6 col-6 d-flex align-items-stretch mt-4 mt-md-0 mb-4" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><img src="{{work.imageSm}}" /></div>
+                <!-- <h4>{{work.name}}</h4> -->
+                <!-- <p class="mb-4">{{work.team}}</p> -->
+              </div>
+            </div>
+
+          {% endfor %}
+
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+    <!-- <div class="container aos-init aos-animate" data-aos="fade-up"><hr /></div> -->
+    <div id="services"  class="container aos-init aos-animate" data-aos="fade-up"><hr /></div>
+    {% for callouts in callouts %}
+      <!-- Header -->
+      <section class="hero overflow-visible">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-md-flex align-items-center"  style="z-index:3">
+                    <div>
+                        <h3>{{callouts.title}}</h3>
+                        {{callouts.content | safe }}
+                        <!-- <a style="z-index:10;" class="btn-primary mb-5 mb-lg-0" href="#work">View Work</a> -->
+                    </div> 
+                </div> 
+                <div class="col-lg-8 text-center d-flex justify-content-center position-relative ">
+                  <img src="{{callouts.image}}" style="width:100%">
+                </div> 
+            </div> 
+        </div>
+      </section> 
+      <!-- end of header -->
+      {% endfor %}
+
+  </main>
+
