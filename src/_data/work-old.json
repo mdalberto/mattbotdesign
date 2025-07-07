@@ -22,6 +22,14 @@
 		"imageSm": "assets/img/work/oe-xs.jpg",
         "url": "assets/img/work/oe.jpg"
     },
+        {
+        "id": "1",
+        "name": "Pentec Health Portal",
+        "team": " --- ",
+        "image": "assets/img/work/pentec-portal-xs.jpg",
+		"imageSm": "assets/img/work/pentec-portal-xs.jpg",
+        "url": "pentec-dashboard"
+    },
     {
         "id": "1",
         "name": "Buckley Sports Management",

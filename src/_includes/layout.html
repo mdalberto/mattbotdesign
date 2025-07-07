@@ -13,7 +13,7 @@
     <meta property="og:description" content="Mattbotdesign">
     <meta property="og:url" content="http://www.mattbotdesign.com/">
     <meta property="og:site_name" content="Mattbotdesign">
-    <meta property="og:image" content="assets/img/logo/previewimage-min.jpg">
+    <meta property="og:image" content="/assets/img/logo/previewimage-min.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@mattbotdesign">
     <meta name="twitter:label1" content="Est. reading time">
@@ -22,17 +22,17 @@
         <meta property="og:site_name" content="Mattbotdesign">
         <meta property="og:image:width" content="1200"> <!-- Adjust the width of your image -->
         <meta property="og:image:height" content="630"> <!-- Adjust the height of your image -->
-    <meta name="msapplication-TileImage" content="assets/img/logo/270.png">
-    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.ico">
-    <link rel="icon" type="image/png" href="assets/img/logo/favicon.png">
-    <link rel="icon" href="assets/img/logo/32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="assets/img/logo/60.png">
-    <link rel="apple-touch-icon" href="assets/img/logo/180.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo/180.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/logo/76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/logo/120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/logo/152.png">
-    <meta name="msapplication-TileImage" content="assets/img/logo/270.png">
+    <meta name="msapplication-TileImage" content="/assets/img/logo/270.png">
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo/favicon.ico">
+    <link rel="icon" type="image/png" href="/assets/img/logo/favicon.png">
+    <link rel="icon" href="/assets/img/logo/32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/img/logo/60.png">
+    <link rel="apple-touch-icon" href="/assets/img/logo/180.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/logo/180.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/logo/76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/logo/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/logo/152.png">
+    <meta name="msapplication-TileImage" content="/assets/img/logo/270.png">
     <!-- <link href="/css/vendor/aos/aos.css" rel="stylesheet">
     <link href="/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -46,10 +46,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link rel="stylesheet" href="assets/css/styles-min.css" />
+    <link rel="stylesheet" href="/assets/css/styles-min.css" />
 </head>
 <body>
-  <img src="assets/img/bgd.jpg" class="bgd-image2" />
+  <!-- <img src="assets/img/bgd.jpg" class="bgd-image2" /> -->
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center position-relative header-nav">
@@ -58,24 +58,28 @@
 
       <nav id="navbar" class="navbar">
         <!-- <a href="/" class="logo"><img src="assets/img/logo/logo.svg" alt="" class="img-fluid"> </a> -->
+        
+        {%- if currentPage == 'homepage' -%}
         <ul class="nav-group-left">
-          <!-- <li><a class="nav-link scrollto {{ 'active' if currentPage == 'home' }}" href="/">Home</a></li>
-          <li><a class="nav-link scrollto {{ 'active' if currentPage == 'work' }}" href="#work">Work</a></li>
-          <li><a class="nav-link scrollto {{ 'active' if currentPage == 'services' }}" href="#services">Services</a></li> -->
-          <li><a class="nav-link scrollto" href="#header">Home</a></li>
-          <li><a class="nav-link scrollto" href="#work">Work</a></li>
+          <li><a class="nav-link scrollto {{ 'active' if currentPage == 'homepage' }}" href="#header">Home</a></li>
+          <li><a class="nav-link scrollto" href="/case-studies">Case Studies</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="/assets/img/resume.pdf">Resume</a></li>
-
         </ul>
-
 
         <div class="icon mobile-nav-toggle"></div>
 
-        <ul class="nav-number"><li>
-          <button style="cursor:pointer;" onclick="location.href='tel:2672106381';" type="button" class="btn btn-secondary">
+        {%- else -%}
+
+
+      <a class="nav-link mx-0" href="/"><i class="bi bi-chevron-left" style="font-size:30px;"></i></a></li>
+
+        {%- endif -%}
+
+          <!-- <button style="cursor:pointer;" onclick="location.href='tel:2672106381';" type="button" class="btn btn-secondary">
             <span class="icon-circle"><i class="bi bi-telephone-fill"></i></span> 267 210 6381
-        </button></li></ul>
+        </button> -->
+  
 
       </nav><!-- .navbar -->
    
@@ -105,7 +109,7 @@
           <h4>Useful Links</h4>
           <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#work">Work</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="/case-studies">Case Studies</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
             <!-- <li><i class="bx bx-chevron-right"></i> <a href="/contact-us">Contact Us</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="/about-us">About Us</a></li> -->
@@ -116,8 +120,8 @@
         <div class="col-lg-3 col-sm-6 footer-links">
           <h4>Contact Us</h4>
           <ul class="has-icons">
-            <li><i class="bi bi-phone-fill"></i> <a href="tel:267-210-6381">+1 267 210 6381</a></li>
-            <li><i class="bi bi-envelope-fill"></i> <a href="mailto:'mdal138@gmail.com';">mdal138@gmail.com</a></li>
+            <!-- <li><i class="bi bi-phone-fill"></i> <a href="tel:267-210-6381">+1 267 210 6381</a></li>
+            <li><i class="bi bi-envelope-fill"></i> <a href="mailto:'mdal138@gmail.com';">mdal138@gmail.com</a></li> -->
             <!-- <li><i class="bi bi-geo-alt-fill"></i> 
               address
             </li> -->
@@ -142,18 +146,18 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <!-- Vendor JS Files -->
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="/assets/vendor/aos/aos.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="/assets/vendor/php-email-form/validate.js"></script>
+<script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
 
 
 
 
-<script src="assets/vendor/bodymovin/lottie.js"></script><!-- makes the top nav work -->
+<script src="/assets/vendor/bodymovin/lottie.js"></script><!-- makes the top nav work -->
 <script type="text/javascript">
   const icon = document.querySelector('.icon');
   const gears = document.getElementById('gears');
@@ -162,7 +166,7 @@
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: 'assets/img/close-lottie.json'
+    path: '/assets/img/close-lottie.json'
 
   });
 
@@ -236,24 +240,22 @@ function toggleNav() {
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js" integrity="sha512-gze4ZSc3u6B23fISCPvJ+2stODz0DJ3MowbegfgoeYnuvLHh1jHLb1EAP/b8DD20n86AMDfukkEAz2ZhoMd1RA==" crossorigin="anonymous"></script> -->
 <!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 
 <script>
 
 
 </script>
 
-<script type="text/javascript">
-  window.ga = function() {
-      ga.q.push(arguments)
-  };
-  ga.q = [];
-  ga.l = +new Date;
-  ga('create', 'UA-2460563-1', 'auto');
-  ga('set', 'transport', 'beacon');
-  ga('send', 'pageview')
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YQCB1ZB43F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YQCB1ZB43F');
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 </body>
 </html>

@@ -1,10 +1,40 @@
-[    {
+[   
+    
+{
+    "id": "1",
+    "name": "Pentec Health Portal",
+    "team": " --- ",
+    "image": "assets/img/work/pentec-portal-xs.jpg",
+    "imageSm": "assets/img/work/pentec-portal-xs.jpg",
+    "url": "/pentec-dashboard",
+    "openlocation": "window.location.href"
+},
+{
+    "id": "1",
+    "name": "Psychic Cloud",
+    "team": " --- ",
+    "image": "assets/img/work/psychic-cloud-xs.jpg",
+    "imageSm": "assets/img/work/psychic-cloud-xs.jpg",
+    "url": "/psychic-cloud",
+    "openlocation": "window.location.href"
+},
+{
+    "id": "1",
+    "name": "Mew",
+    "team": " --- ",
+    "image": "assets/img/work/mew.jpg",
+    "imageSm": "assets/img/work/mew.jpg",
+    "url": "/mew",
+    "openlocation": "window.location.href"
+},
+{
     "id": "1",
     "name": "Energy Healing",
     "team": " --- ",
     "image": "assets/img/work/energy-healing-xs.jpg",
     "imageSm": "assets/img/work/energy-healing-xs.jpg",
-    "url": "https://www.psychicsource.com/energy-healing"
+    "url": "https://www.psychicsource.com/energy-healing",
+    "openlocation": "window.open"
 },
     {
         "id": "1",
@@ -12,7 +42,8 @@
         "team": "intuitiveaiadvisors.app",
         "image": "assets/img/work/iaa.jpg",
 		"imageSm": "assets/img/work/iaa-xs.jpg",
-        "url": "https://intuitiveaiadvisors.app/"
+        "url": "https://intuitiveaiadvisors.app/",
+    "openlocation": "window.open"
     },
     {
         "id": "1",
@@ -20,7 +51,8 @@
         "team": " --- ",
         "image": "assets/img/work/oe-xs.jpg",
 		"imageSm": "assets/img/work/oe-xs.jpg",
-        "url": "assets/img/work/oe.jpg"
+        "url": "assets/img/work/oe.jpg",
+    "openlocation": "window.open"
     },
     {
         "id": "1",
@@ -28,15 +60,8 @@
         "team": "buckleysports.com",
         "image": "assets/img/work/buckley-lg.jpg",
 		"imageSm": "assets/img/work/buckley-xs.jpg",
-        "url": "https://buckleysports.com"
-    },
-    {
-        "id": "1",
-        "name": "Dolyestown Fresh",
-        "team": " --- ",
-        "image": "assets/img/work/dfresh.jpg",
-		"imageSm": "assets/img/work/dfresh-xs.jpg",
-        "url": "assets/img/work/doylestownfresh.jpg"
+        "url": "https://buckleysports.com",
+    "openlocation": "window.open"
     },
     {
         "id": "1",
@@ -44,7 +69,8 @@
         "team": " --- ",
         "image": "assets/img/work/pentec-web-lg.jpg",
 		"imageSm": "assets/img/work/pentec-web-xs.jpg",
-        "url": "https://www.figma.com/proto/S3GL2h7d2oybZnl39yHGmb/Pentec-Health-Website?type=design&node-id=1-440&t=Sxuadq2W6miqq00J-1&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A440&show-proto-sidebar=1"
+        "url": "https://www.figma.com/proto/S3GL2h7d2oybZnl39yHGmb/Pentec-Health-Website?type=design&node-id=1-440&t=Sxuadq2W6miqq00J-1&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A440&show-proto-sidebar=1",
+    "openlocation": "window.open"
     },
     {
         "id": "1",
@@ -52,39 +78,18 @@
         "team": "orelandpack88.com",
         "image": "assets/img/work/orlandpack88-lg.jpg",
 		"imageSm": "assets/img/work/oreland-xs.jpg",
-        "url": "https://orelandpack88.com/"
+        "url": "https://orelandpack88.com/",
+    "openlocation": "window.open"
     },
-    {
-        "id": "1",
-        "name": "Pentec Health Portal",
-        "team": " --- ",
-        "image": "assets/img/work/pentec-portal-xs.jpg",
-		"imageSm": "assets/img/work/pentec-portal-xs.jpg",
-        "url": "https://www.figma.com/proto/NWh5KMCrfadlBwTOumb42W/Pentec-Health---Specialty-Care-Portal?type=design&node-id=1112-7233&t=J0OpRZbZhGnydzLM-0&scaling=min-zoom&page-id=1112%3A3482&starting-point-node-id=1112%3A7233&show-proto-sidebar=1"
-    },
-    {
-        "id": "1",
-        "name": "Psychic Cloud",
-        "team": " --- ",
-        "image": "assets/img/work/psychic-cloud-xs.jpg",
-		"imageSm": "assets/img/work/psychic-cloud-xs.jpg",
-        "url": "https://www.psychiccloud.app/"
-    },
+
     {
         "id": "1",
         "name": "Psychic Source",
         "team": " --- ",
         "image": "assets/img/work/ps-app-xs.jpg",
 		"imageSm": "assets/img/work/ps-app-xs.jpg",
-        "url": "https://apps.apple.com/us/app/psychicsource/id1099970139?ls=1"
-    },
-    {
-        "id": "1",
-        "name": "Psychic Cloud",
-        "team": " --- ",
-        "image": "assets/img/work/pf-app-xs.jpg",
-		"imageSm": "assets/img/work/pf-app-xs.jpg",
-        "url": "https://apps.apple.com/us/app/pathforward-psychic/id1587762819?ls=1"
+        "url": "https://apps.apple.com/us/app/psychicsource/id1099970139?ls=1",
+    "openlocation": "window.open"
     }
 ]
 

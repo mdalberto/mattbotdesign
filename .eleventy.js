@@ -13,9 +13,10 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
     //   // The base URL: defaults to Path Prefix
       //baseHref: "http://localhost:8080/_site/",
-       //baseHref: "",
+       baseHref: "/",
        extensions: "html",
      });
+
 
     return {
         dir: {
