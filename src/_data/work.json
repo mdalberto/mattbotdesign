@@ -1,5 +1,4 @@
-[   
-    
+[
 {
     "id": "1",
     "name": "Pentec Health Portal",
@@ -7,7 +6,7 @@
     "image": "assets/img/work/pentec-portal-xs.jpg",
     "imageSm": "assets/img/work/pentec-portal-xs.jpg",
     "url": "/pentec-dashboard",
-    "openlocation": "window.location.href"
+    "openlocation": "_self"
 },
 {
     "id": "1",
@@ -16,7 +15,7 @@
     "image": "assets/img/work/psychic-cloud-xs.jpg",
     "imageSm": "assets/img/work/psychic-cloud-xs.jpg",
     "url": "/psychic-cloud",
-    "openlocation": "window.location.href"
+    "openlocation": "_self"
 },
 {
     "id": "1",
@@ -25,7 +24,7 @@
     "image": "assets/img/work/mew.jpg",
     "imageSm": "assets/img/work/mew.jpg",
     "url": "/mew",
-    "openlocation": "window.location.href"
+    "openlocation": "_self"
 },
 {
     "id": "1",
@@ -34,7 +33,7 @@
     "image": "assets/img/work/energy-healing-xs.jpg",
     "imageSm": "assets/img/work/energy-healing-xs.jpg",
     "url": "https://www.psychicsource.com/energy-healing",
-    "openlocation": "window.open"
+    "openlocation": "_blank"
 },
     {
         "id": "1",
@@ -43,7 +42,7 @@
         "image": "assets/img/work/iaa.jpg",
 		"imageSm": "assets/img/work/iaa-xs.jpg",
         "url": "https://intuitiveaiadvisors.app/",
-    "openlocation": "window.open"
+    "openlocation": "_blank"
     },
     {
         "id": "1",
@@ -52,7 +51,7 @@
         "image": "assets/img/work/oe-xs.jpg",
 		"imageSm": "assets/img/work/oe-xs.jpg",
         "url": "assets/img/work/oe.jpg",
-    "openlocation": "window.open"
+    "openlocation": "_blank"
     },
     {
         "id": "1",
@@ -61,7 +60,7 @@
         "image": "assets/img/work/buckley-lg.jpg",
 		"imageSm": "assets/img/work/buckley-xs.jpg",
         "url": "https://buckleysports.com",
-    "openlocation": "window.open"
+    "openlocation": "_blank"
     },
     {
         "id": "1",
@@ -70,7 +69,7 @@
         "image": "assets/img/work/pentec-web-lg.jpg",
 		"imageSm": "assets/img/work/pentec-web-xs.jpg",
         "url": "https://www.figma.com/proto/S3GL2h7d2oybZnl39yHGmb/Pentec-Health-Website?type=design&node-id=1-440&t=Sxuadq2W6miqq00J-1&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A440&show-proto-sidebar=1",
-    "openlocation": "window.open"
+    "openlocation": "_blank"
     },
     {
         "id": "1",
@@ -79,7 +78,7 @@
         "image": "assets/img/work/orlandpack88-lg.jpg",
 		"imageSm": "assets/img/work/oreland-xs.jpg",
         "url": "https://orelandpack88.com/",
-    "openlocation": "window.open"
+    "openlocation": "_blank"
     },
 
     {
@@ -89,7 +88,7 @@
         "image": "assets/img/work/ps-app-xs.jpg",
 		"imageSm": "assets/img/work/ps-app-xs.jpg",
         "url": "https://apps.apple.com/us/app/psychicsource/id1099970139?ls=1",
-    "openlocation": "window.open"
+    "openlocation": "_blank"
     }
 ]
 

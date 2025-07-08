@@ -1,81 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mattbotdesign | Matthew Dalberto</title>
-    <meta name="description" content="Mattbotdesign">
-    <link rel="canonical" href="http://www.mattbotdesign.com/">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Creative Consultant">
-    <meta property="og:description" content="Mattbotdesign">
-    <meta property="og:url" content="http://www.mattbotdesign.com/">
-    <meta property="og:site_name" content="Mattbotdesign">
-    <meta property="og:image" content="/assets/img/logo/previewimage-min.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@mattbotdesign">
-    <meta name="twitter:label1" content="Est. reading time">
-    <meta name="twitter:data1" content="1 minute">
-        <!-- For LinkedIn -->
-        <meta property="og:site_name" content="Mattbotdesign">
-        <meta property="og:image:width" content="1200"> <!-- Adjust the width of your image -->
-        <meta property="og:image:height" content="630"> <!-- Adjust the height of your image -->
-    <meta name="msapplication-TileImage" content="/assets/img/logo/270.png">
-    <link rel="icon" type="image/x-icon" href="/assets/img/logo/favicon.ico">
-    <link rel="icon" type="image/png" href="/assets/img/logo/favicon.png">
-    <link rel="icon" href="/assets/img/logo/32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="/assets/img/logo/60.png">
-    <link rel="apple-touch-icon" href="/assets/img/logo/180.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/logo/180.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/logo/76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/logo/120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/logo/152.png">
-    <meta name="msapplication-TileImage" content="/assets/img/logo/270.png">
-    <!-- <link href="/css/vendor/aos/aos.css" rel="stylesheet">
-    <link href="/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="/css/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="/css/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="/css/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="/css/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-   -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link rel="stylesheet" href="/assets/css/styles-min.css" />
-</head>
-<body>
-  <!-- <img src="assets/img/bgd.jpg" class="bgd-image2" /> -->
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center position-relative header-nav">
-      <!-- <h1 class="logo me-auto"><a href="index.html">Mattbotdesign</a></h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
-
-      <nav id="navbar" class="navbar">
-        <!-- <a href="/" class="logo"><img src="assets/img/logo/logo.svg" alt="" class="img-fluid"> </a> --><ul class="nav-group-left">
-          <li><a class="nav-link scrollto active" href="#header">Home</a></li>
-          <li><a class="nav-link scrollto" href="/case-studies">Case Studies</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="/assets/img/resume.pdf">Resume</a></li>
-        </ul>
-
-        <div class="icon mobile-nav-toggle"></div><!-- <button style="cursor:pointer;" onclick="location.href='tel:2672106381';" type="button" class="btn btn-secondary">
-            <span class="icon-circle"><i class="bi bi-telephone-fill"></i></span> 267 210 6381
-        </button> -->
-  
-
-      </nav><!-- .navbar -->
-   
-    </div>
-
-  </header><!-- End Header -->
-
-
+---
+layout: layout.html
+title: Mattbotdesign | Matthew Dalberto
+currentPage: homepage
+---
 
 <!-- <div class="bgd-image2"></div> -->
 <main id="main" class="nav-spacer">
@@ -109,97 +36,16 @@
 
         <div class="row justify-content-center mt-sm-2">
 
-          
+          {% for work in work %}
 
-            <div style="cursor:pointer;" onclick="window.open('/pentec-dashboard','_self');" class="col-xl-3 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
-                <div class="work-tiles"><img src="assets/img/work/pentec-portal-xs.jpg" /></div>
-                <!-- <h4>Pentec Health Portal</h4> -->
-                <!-- <p class="mb-4"> --- </p> -->
+            <div style="cursor:pointer;" onclick="window.open('{{work.url | safe }}','{{work.openlocation}}');" class="col-xl-3 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
+                <div class="work-tiles"><img src="{{work.imageSm}}" /></div>
+                <!-- <h4>{{work.name}}</h4> -->
+                <!-- <p class="mb-4">{{work.team}}</p> -->
             
             </div>
 
-          
-
-            <div style="cursor:pointer;" onclick="window.open('/psychic-cloud','_self');" class="col-xl-3 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
-                <div class="work-tiles"><img src="assets/img/work/psychic-cloud-xs.jpg" /></div>
-                <!-- <h4>Psychic Cloud</h4> -->
-                <!-- <p class="mb-4"> --- </p> -->
-            
-            </div>
-
-          
-
-            <div style="cursor:pointer;" onclick="window.open('/mew','_self');" class="col-xl-3 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
-                <div class="work-tiles"><img src="assets/img/work/mew.jpg" /></div>
-                <!-- <h4>Mew</h4> -->
-                <!-- <p class="mb-4"> --- </p> -->
-            
-            </div>
-
-          
-
-            <div style="cursor:pointer;" onclick="window.open('https://www.psychicsource.com/energy-healing','_blank');" class="col-xl-3 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
-                <div class="work-tiles"><img src="assets/img/work/energy-healing-xs.jpg" /></div>
-                <!-- <h4>Energy Healing</h4> -->
-                <!-- <p class="mb-4"> --- </p> -->
-            
-            </div>
-
-          
-
-            <div style="cursor:pointer;" onclick="window.open('https://intuitiveaiadvisors.app/','_blank');" class="col-xl-3 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
-                <div class="work-tiles"><img src="assets/img/work/iaa-xs.jpg" /></div>
-                <!-- <h4>Intuitive AI Advisors</h4> -->
-                <!-- <p class="mb-4">intuitiveaiadvisors.app</p> -->
-            
-            </div>
-
-          
-
-            <div style="cursor:pointer;" onclick="window.open('assets/img/work/oe.jpg','_blank');" class="col-xl-3 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
-                <div class="work-tiles"><img src="assets/img/work/oe-xs.jpg" /></div>
-                <!-- <h4>OE</h4> -->
-                <!-- <p class="mb-4"> --- </p> -->
-            
-            </div>
-
-          
-
-            <div style="cursor:pointer;" onclick="window.open('https://buckleysports.com','_blank');" class="col-xl-3 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
-                <div class="work-tiles"><img src="assets/img/work/buckley-xs.jpg" /></div>
-                <!-- <h4>Buckley Sports Management</h4> -->
-                <!-- <p class="mb-4">buckleysports.com</p> -->
-            
-            </div>
-
-          
-
-            <div style="cursor:pointer;" onclick="window.open('https://www.figma.com/proto/S3GL2h7d2oybZnl39yHGmb/Pentec-Health-Website?type=design&node-id=1-440&t=Sxuadq2W6miqq00J-1&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A440&show-proto-sidebar=1','_blank');" class="col-xl-3 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
-                <div class="work-tiles"><img src="assets/img/work/pentec-web-xs.jpg" /></div>
-                <!-- <h4>Pentec Health Web</h4> -->
-                <!-- <p class="mb-4"> --- </p> -->
-            
-            </div>
-
-          
-
-            <div style="cursor:pointer;" onclick="window.open('https://orelandpack88.com/','_blank');" class="col-xl-3 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
-                <div class="work-tiles"><img src="assets/img/work/oreland-xs.jpg" /></div>
-                <!-- <h4>Oreland Pack 88</h4> -->
-                <!-- <p class="mb-4">orelandpack88.com</p> -->
-            
-            </div>
-
-          
-
-            <div style="cursor:pointer;" onclick="window.open('https://apps.apple.com/us/app/psychicsource/id1099970139?ls=1','_blank');" class="col-xl-3 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
-                <div class="work-tiles"><img src="assets/img/work/ps-app-xs.jpg" /></div>
-                <!-- <h4>Psychic Source</h4> -->
-                <!-- <p class="mb-4"> --- </p> -->
-            
-            </div>
-
-          
+          {% endfor %}
             <div class="d-flex justify-content-center">
                  <a style="z-index:10;" class="btn-primary mb-5 mb-lg-0 btn-solid-lg" href="/case-studies">View All</a>
             </div>
@@ -212,235 +58,25 @@
 
     <!-- <div class="container aos-init aos-animate" data-aos="fade-up"><hr /></div> -->
     <div id="services"  class="container aos-init aos-animate" data-aos="fade-up"><hr /></div>
-    
+    {% for callouts in callouts %}
       <!-- Header -->
       <section class="hero overflow-visible">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 d-md-flex align-items-center"  style="z-index:3">
                     <div>
-                        <h3>Interface Design</h3>
-                        <p class='p-large mb-4 pb-2'>Thousands of diagrams, mockups, and specs have been produced to help stakeholders and guide developers in coding the interactive elements needed for users to progress through various tasks and funnels.</p><p>My services specialize in various forms of visual communication to facilitate the conversation (or handoff) dependant upon the need.</p><ul><li>Clickable Prototypes</li><li>Hi-Fidelity Static Mockups</li><li>Mockup + Comments + Diagram Hybrids (pictured)</li><li>Mockup + Developer Spec Hybrids</li></ul>
+                        <h3>{{callouts.title}}</h3>
+                        {{callouts.content | safe }}
                         <!-- <a style="z-index:10;" class="btn-primary mb-5 mb-lg-0" href="#work">View Work</a> -->
                     </div> 
                 </div> 
                 <div class="col-lg-8 text-center d-flex justify-content-center position-relative ">
-                  <img src="assets/img/work/ui.png" style="width:100%">
+                  <img src="{{callouts.image}}" style="width:100%">
                 </div> 
             </div> 
         </div>
       </section> 
       <!-- end of header -->
-      
-      <!-- Header -->
-      <section class="hero overflow-visible">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 d-md-flex align-items-center"  style="z-index:3">
-                    <div>
-                        <h3>Design, Branding &amp; AI</h3>
-                        <p class='p-large mb-4 pb-2'>When it's appropriate, work flows of mine take advantage of AI tools to harness rapid visual image creation of which then gets refined further to become relevant, specific and standard to a particular business's visual branding and communication goals.</p>
-                        <!-- <a style="z-index:10;" class="btn-primary mb-5 mb-lg-0" href="#work">View Work</a> -->
-                    </div> 
-                </div> 
-                <div class="col-lg-8 text-center d-flex justify-content-center position-relative ">
-                  <img src="assets/img/work/branding.png" style="width:100%">
-                </div> 
-            </div> 
-        </div>
-      </section> 
-      <!-- end of header -->
-      
-      <!-- Header -->
-      <section class="hero overflow-visible">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 d-md-flex align-items-center"  style="z-index:3">
-                    <div>
-                        <h3>Optimization Experiments</h3>
-                        <p class='p-large mb-4 pb-2'>Are the graphics working? Is the copy being understood? How likely is the user able to understand and complete what they want to complete on your website/app? These questions get answered through user testing.</p><p>User Testing activities I can consult on are:</p><ul><li>Conversion Experiment Suggestions*</li><li>Ideation Workshops</li><li>Testing Strategy</li></ul>
-                        <!-- <a style="z-index:10;" class="btn-primary mb-5 mb-lg-0" href="#work">View Work</a> -->
-                    </div> 
-                </div> 
-                <div class="col-lg-8 text-center d-flex justify-content-center position-relative ">
-                  <img src="assets/img/work/collab.jpg" style="width:100%">
-                </div> 
-            </div> 
-        </div>
-      </section> 
-      <!-- end of header -->
-      
+      {% endfor %}
 
   </main>
-
-
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <!-- <div class="graphic"></div> -->
-    <div class="container position-relative">
-      <div class="row">
-
-        <!-- <div class="col-lg-3 col-md-6 footer-contact">
-          <img src="assets/img/logo/logo.svg">
-
-        </div> -->
-
-        <div class="col-lg-3 col-md-6 footer-links">
-
-        </div>
-
-        <div class="col-lg-3 col-sm-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/case-studies">Case Studies</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-            <!-- <li><i class="bx bx-chevron-right"></i> <a href="/contact-us">Contact Us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/about-us">About Us</a></li> -->
-
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 footer-links">
-          <h4>Contact Us</h4>
-          <ul class="has-icons">
-            <!-- <li><i class="bi bi-phone-fill"></i> <a href="tel:267-210-6381">+1 267 210 6381</a></li>
-            <li><i class="bi bi-envelope-fill"></i> <a href="mailto:'mdal138@gmail.com';">mdal138@gmail.com</a></li> -->
-            <!-- <li><i class="bi bi-geo-alt-fill"></i> 
-              address
-            </li> -->
-            <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/mdalberto/" target="_blank">/in/mdalberto/</a></li>
-            <!--<li><i class="bi bi-instagram"></i> <a href="https://www.instagram.com/mattbotdesign/"  target="_blank">@mattbotdesign</a></li> -->
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="copyright">
-        &copy; Copyright <strong><span>Mattbotdesign</span></strong>. All Rights Reserved
-      </div>
-
-  </div>
-
-</footer><!-- End Footer -->
-
-
-
-<!-- <div id="preloader"></div> -->
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-<!-- Vendor JS Files -->
-<script src="/assets/vendor/aos/aos.js"></script>
-<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="/assets/vendor/php-email-form/validate.js"></script>
-<script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-
-
-
-<script src="/assets/vendor/bodymovin/lottie.js"></script><!-- makes the top nav work -->
-<script type="text/javascript">
-  const icon = document.querySelector('.icon');
-  const gears = document.getElementById('gears');
-  var animation = lottie.loadAnimation({
-    container: icon,
-    renderer: 'svg',
-    loop: false,
-    autoplay: false,
-    path: '/assets/img/close-lottie.json'
-
-  });
-
-// When toggle button pressed, run toggleNav function
-icon.addEventListener('click', toggleNav);
-var state = 'play';
-function toggleNav() {
-  console.log('hi');        
-  animation.goToAndStop(7, true);
-
-  if(state === 'play') {
-    animation.play();
-    animation.setDirection(1);
-    state = 'pause';
-  } else {
-    //animation.goToAndStop(0, true);
-    animation.setDirection(-1);
-    //animation.goToAndStop(-1);
-    animation.play();
-    state = 'play';
-  }
-
-}
-</script>
-
-
-
-<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-
-<script type="text/javascript">
-
-
-// Detect the device
-// let userAgent = navigator.userAgent;
-
-// if (/Mobi|Android/i.test(userAgent)) {
-//     // If the user agent is a mobile device
-//     LottieInteractivity.create({
-//     player: '#gears',
-//     mode: 'scroll',
-//     actions: [
-//       {
-//         visibility: [.5,1],
-//         type: 'seek',
-//         frames: [0, 360],
-//       },
-//     ]
-//   });
-// } else {
-//     // If the user agent is a Desktop
-//     LottieInteractivity.create({
-//     player: '#gears',
-//     mode: 'scroll',
-//     actions: [
-//       {
-//         visibility: [0,1],
-//         type: 'seek',
-//         frames: [0, 360],
-
-//       },
-//     ]
-//   });
-// }
-
-
-
-</script>
-
-
-
-
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js" integrity="sha512-gze4ZSc3u6B23fISCPvJ+2stODz0DJ3MowbegfgoeYnuvLHh1jHLb1EAP/b8DD20n86AMDfukkEAz2ZhoMd1RA==" crossorigin="anonymous"></script> -->
-<!-- Template Main JS File -->
-<script src="/assets/js/main.js"></script>
-
-<script>
-
-
-</script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YQCB1ZB43F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YQCB1ZB43F');
-</script>
-
-</body>
-</html>
