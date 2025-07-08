@@ -37,9 +37,8 @@ currentPage: homepage
         <div class="row justify-content-center mt-sm-2">
 
           {% for work in work %}
-          
-            <div style="cursor:pointer;" onclick="window.open('{{work.url | safe }}');" class="col-xl-4 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
-              
+
+            <div style="cursor:pointer;" onclick="window.open('{{work.url | safe }}','{{work.openlocation}}');" class="col-xl-3 col-md-4 col-sm-6 col-xs-6 col-6 d-flex align-items-stretch mb-4 mb-xs-5 mb-sm-5 mb-md-3 mb-lg-5 " data-aos="zoom-in" data-aos-delay="200">
                 <div class="work-tiles"><img src="{{work.imageSm}}" /></div>
                 <!-- <h4>{{work.name}}</h4> -->
                 <!-- <p class="mb-4">{{work.team}}</p> -->
