@@ -3,18 +3,18 @@
     "id": "1",
     "title": "Interface Design",
     "image": "assets/img/work/ui.png",
-    "content": "<p class='p-large mb-4 pb-2'>Thousands of diagrams, mockups, and specs have been produced to help stakeholders and guide developers in coding the interactive elements needed for users to progress through various tasks and funnels.</p><p>My services specialize in various forms of visual communication to facilitate the conversation (or handoff) dependant upon the need.</p><ul><li>Clickable Prototypes</li><li>Hi-Fidelity Static Mockups</li><li>Mockup + Comments + Diagram Hybrids (pictured)</li><li>Mockup + Developer Spec Hybrids</li></ul>"
+    "content": "<p class='p-large mb-4 pb-2'>Over the years, I’ve crafted user flows, diagrams, and high-fidelity mockups to support stakeholder alignment, user testing, and seamless developer handoff. My approach adapts to the needs of the team whether it’s sparking collaboration, clarifying intent, or specifying functionality.</p><ul><li>Clickable Prototypes</li><li>Hi-Fidelity Mockups</li><li>Mockup + Diagram Hybrids (pictured)</li><li>Mockup + Developer Specs</li></ul>"
     },
     {
         "id": "3",
         "title": "Design, Branding & AI",
         "image": "assets/img/work/branding.png",
-		"content": "<p class='p-large mb-4 pb-2'>When it's appropriate, work flows of mine take advantage of AI tools to harness rapid visual image creation of which then gets refined further to become relevant, specific and standard to a particular business's visual branding and communication goals.</p>"
+		"content": "<p class='p-large mb-4 pb-2'>I integrate AI tools into my design workflow to accelerate visual ideation and concept development. These outputs are then thoughtfully refined to ensure they’re brand-specific, relevant, and aligned with each business’s visual identity and communication goals.</p>"
     },
     {
         "id": "2",
-        "title": "Optimization Experiments",
-        "content": "<p class='p-large mb-4 pb-2'>Are the graphics working? Is the copy being understood? How likely is the user able to understand and complete what they want to complete on your website/app? These questions get answered through user testing.</p><p>User Testing activities I can consult on are:</p><ul><li>Conversion Experiment Suggestions*</li><li>Ideation Workshops</li><li>Testing Strategy</li></ul>",
+        "title": "User Testing & Optimization",
+        "content": "<p class='p-large mb-4 pb-2'>Partnered with marketing and analytics teams to conduct user research, usability testing, and A/B experiments turning insights into actionable improvements that drove measurable revenue growth.</p><p>I offer consulting on:</p><ul><li>Optimization Strategy & Experiment Design</li><li>Usability Testing</li><li>Ideation & Co-Creation Workshops</li><li>Test Planning, Execution, and Analysis</li></ul>",
         "image": "assets/img/work/collab.jpg"
     }
 ]
